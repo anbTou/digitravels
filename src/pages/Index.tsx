@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { Promotions } from "@/components/Promotions";
 import { Subscription } from "@/components/Subscription";
+import { PremiumDestinations } from "@/components/PremiumDestinations";
 import { motion } from "framer-motion";
 
 const Index = () => {
@@ -16,6 +17,7 @@ const Index = () => {
       <Features />
       <Promotions />
       <Subscription />
+      <PremiumDestinations />
     </motion.main>
   );
 };
