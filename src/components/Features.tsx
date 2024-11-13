@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, CreditCard, Hotel } from "lucide-react";
+import { Shield, CreditCard, Hotel, Wallet } from "lucide-react";
 
 const features = [
   {
@@ -16,6 +16,11 @@ const features = [
     icon: Shield,
     title: "Guaranteed Quality",
     description: "Hand-picked premium properties for the best experience.",
+  },
+  {
+    icon: Wallet,
+    title: "Seamless Payments",
+    description: "137 currencies, cards (VISA, Mastercard, Amex), digital wallets (PayPal, Google/Apple Pay), and cryptocurrencies via BitPay.",
   },
 ];
 
@@ -35,7 +40,7 @@ export const Features = () => {
           </motion.h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
