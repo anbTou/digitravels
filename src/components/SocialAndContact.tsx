@@ -26,16 +26,16 @@ export const SocialAndContact = () => {
         >
           <div className="grid md:grid-cols-2 gap-12">
             {/* Social Media Section */}
-            <div className="space-y-8">
+            <div className="space-y-8 text-center">
               <h2 className="text-3xl font-bold mb-8">Connect With Us</h2>
-              <div className="flex gap-6">
+              <div className="flex justify-center gap-6">
                 <a
                   href="https://instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group"
                 >
-                  <div className="w-24 h-24 rounded-lg overflow-hidden">
+                  <div className="w-24 h-24 rounded-lg overflow-hidden mx-auto">
                     <img
                       src="https://images.unsplash.com/photo-1582562124811-c09040d0a901"
                       alt="Instagram"
@@ -50,7 +50,7 @@ export const SocialAndContact = () => {
                   rel="noopener noreferrer"
                   className="group"
                 >
-                  <div className="w-24 h-24 rounded-lg overflow-hidden">
+                  <div className="w-24 h-24 rounded-lg overflow-hidden mx-auto">
                     <img
                       src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc"
                       alt="Twitter"
