@@ -4,6 +4,7 @@ import { Promotions } from "@/components/Promotions";
 import { Subscription } from "@/components/Subscription";
 import { PremiumDestinations } from "@/components/PremiumDestinations";
 import { PaymentOptions } from "@/components/PaymentOptions";
+import { SocialAndContact } from "@/components/SocialAndContact";
 import { motion } from "framer-motion";
 
 const Index = () => {
@@ -20,6 +21,7 @@ const Index = () => {
       <Subscription />
       <PremiumDestinations />
       <PaymentOptions />
+      <SocialAndContact />
     </motion.main>
   );
 };
