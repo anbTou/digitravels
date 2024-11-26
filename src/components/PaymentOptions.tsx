@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { PaypalIcon, CreditCard, Bitcoin } from "lucide-react";
+import { CreditCard, Bitcoin, Paypal } from "lucide-react";
 
 const paymentOptions = [
   {
-    icon: PaypalIcon,
+    icon: Paypal,
     title: "PayPal",
     description: "Fast and secure payments with buyer protection",
     referralLink: "https://paypal.com/referral",
