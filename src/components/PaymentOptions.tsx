@@ -1,22 +1,21 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { CreditCard, Bitcoin, Paypal } from "lucide-react";
 
 const paymentOptions = [
   {
-    icon: Paypal,
+    image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
     title: "PayPal",
     description: "Fast and secure payments with buyer protection",
     referralLink: "https://paypal.com/referral",
   },
   {
-    icon: CreditCard,
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
     title: "Revolut",
     description: "Digital banking with great exchange rates",
     referralLink: "https://revolut.com/referral",
   },
   {
-    icon: Bitcoin,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
     title: "Binance",
     description: "Cryptocurrency payments with low fees",
     referralLink: "https://binance.com/referral",
@@ -58,7 +57,13 @@ export const PaymentOptions = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow duration-300"
             >
-              <option.icon className="w-12 h-12 mx-auto mb-6 text-primary" />
+              <div className="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden">
+                <img 
+                  src={option.image} 
+                  alt={option.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <h3 className="text-2xl font-bold mb-4">{option.title}</h3>
               <p className="text-gray-600 mb-6">{option.description}</p>
               <Button
