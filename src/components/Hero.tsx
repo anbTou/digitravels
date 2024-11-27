@@ -16,7 +16,11 @@ export const Hero = () => {
       </div>
       
       <div className="container relative z-10 text-center">
-        <DigiTravelLogo className="mb-8 mx-auto" />
+        <DigiTravelLogo 
+          className="mb-12 mx-auto"
+          // To use an image logo, uncomment and add your image path:
+          // imageSrc="/path-to-your-logo.png"
+        />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

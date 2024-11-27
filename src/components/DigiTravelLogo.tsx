@@ -1,8 +1,25 @@
 import React from 'react';
 
-export const DigiTravelLogo = ({ className = '' }: { className?: string }) => {
+interface DigiTravelLogoProps {
+  className?: string;
+  imageSrc?: string;
+}
+
+export const DigiTravelLogo = ({ className = '', imageSrc }: DigiTravelLogoProps) => {
+  if (imageSrc) {
+    return (
+      <div className={`flex items-center justify-center ${className}`}>
+        <img 
+          src={imageSrc} 
+          alt="Digi Travel Logo" 
+          className="h-16 w-auto"
+        />
+      </div>
+    );
+  }
+
   return (
-    <div className={`flex items-center ${className}`}>
+    <div className={`flex items-center justify-center ${className}`}>
       <svg 
         xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 200 50" 
