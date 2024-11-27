@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { DigiTravelLogo } from "@/components/DigiTravelLogo";
 
 export const Hero = () => {
   return (
@@ -15,6 +16,7 @@ export const Hero = () => {
       </div>
       
       <div className="container relative z-10 text-center">
+        <DigiTravelLogo className="mb-8 mx-auto" />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
