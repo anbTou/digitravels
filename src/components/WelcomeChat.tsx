@@ -8,6 +8,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 export function WelcomeChat() {
   const [open, setOpen] = useState(false);
@@ -70,6 +71,16 @@ export function WelcomeChat() {
                 <div className="space-y-4 text-travel-600">
                   <p className="font-semibold">Thank you for your message!</p>
                   <p>We will get back to you as soon as possible with personalized recommendations.</p>
+                  <a 
+                    href="https://www.digitravels.io/agency" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block mt-4"
+                  >
+                    <Button className="w-full bg-travel-600 hover:bg-travel-700 text-white">
+                      Explore options and best prices
+                    </Button>
+                  </a>
                 </div>
               )}
             </div>
