@@ -24,7 +24,7 @@ const paymentOptions = [
 
 export const PaymentOptions = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-12 bg-white">
       <div className="container">
         <div className="text-center mb-16">
           <motion.h2
