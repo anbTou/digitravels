@@ -5,11 +5,9 @@ import { useToast } from "@/components/ui/use-toast";
 
 export const Subscription = () => {
   const { toast } = useToast();
-  const currentDate = new Date();
-  const isPromoValid = () => {
-    if (currentDate.getMonth() === 0 && currentDate.getDate() <= 30) return true; // January
-    return false;
-  };
+  // For testing purposes, we'll make isPromoValid always return true
+  // In production, you would want to use the actual date check
+  const isPromoValid = () => true;
   
   const price = isPromoValid() ? 10 : 20; // 50% off regular price of $20
 
