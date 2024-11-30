@@ -12,6 +12,8 @@ import { Button } from "@/components/ui/button";
 
 export function WelcomeChat() {
   const [open, setOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [showThankYou, setShowThankYou] = useState(false);
 
@@ -25,9 +27,9 @@ export function WelcomeChat() {
   }, []);
 
   const handleSendMessage = () => {
-    if (message.trim()) {
+    if (name.trim() && email.trim() && message.trim()) {
       // Here you would typically handle sending the message
-      console.log("Message sent:", message);
+      console.log("Message sent:", { name, email, message });
       setMessage("");
       setShowThankYou(true);
     }
@@ -84,20 +86,39 @@ export function WelcomeChat() {
                 </div>
               )}
             </div>
-            <div className="flex gap-2 mt-auto">
+            <div className="space-y-4">
               <Input
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                onKeyPress={handleKeyPress}
-                placeholder="Type your message..."
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Your name *"
+                required
                 className="flex-grow"
               />
-              <button
-                onClick={handleSendMessage}
-                className="bg-travel-600 hover:bg-travel-700 text-white p-2 rounded-full"
-              >
-                <Send className="h-5 w-5" />
-              </button>
+              <Input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Your email *"
+                required
+                className="flex-grow"
+              />
+              <div className="flex gap-2">
+                <Input
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  onKeyPress={handleKeyPress}
+                  placeholder="Type your message... *"
+                  required
+                  className="flex-grow"
+                />
+                <button
+                  onClick={handleSendMessage}
+                  disabled={!name || !email || !message}
+                  className="bg-travel-600 hover:bg-travel-700 text-white p-2 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <Send className="h-5 w-5" />
+                </button>
+              </div>
             </div>
           </div>
           <button 
