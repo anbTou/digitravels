@@ -6,12 +6,20 @@ import { useToast } from "@/components/ui/use-toast";
 export const Subscription = () => {
   const { toast } = useToast();
   const currentDate = new Date();
-  const isPromoValid = () => {
-    if (currentDate.getMonth() === 0 && currentDate.getDate() <= 30) return true; // January
-    return false;
-  };
+  const isDecember = currentDate.getMonth() === 11;
+  const isJanuaryPromo = currentDate.getMonth() === 0 && currentDate.getDate() <= 30;
   
-  const price = isPromoValid() ? 10 : 20; // 50% off regular price of $20
+  const getPrice = () => {
+    const basePrice = 20;
+    if (isDecember) {
+      return basePrice * 0.5; // 50% off
+    } else if (isJanuaryPromo) {
+      return basePrice * 0.9; // 10% off
+    }
+    return basePrice;
+  };
+
+  const price = getPrice();
 
   const handleSubscribe = () => {
     toast({
@@ -50,16 +58,21 @@ export const Subscription = () => {
           className="max-w-md mx-auto bg-white rounded-2xl shadow-lg p-8 border"
         >
           <div className="text-center mb-8">
-            {isPromoValid() && (
+            {isDecember && (
               <div className="bg-red-100 text-red-700 px-4 py-2 rounded-lg mb-4">
-                Special New Year Offer - 50% OFF until January 30th!
+                Christmas Special Offer - 50% OFF until December 31st!
+              </div>
+            )}
+            {isJanuaryPromo && (
+              <div className="bg-blue-100 text-blue-700 px-4 py-2 rounded-lg mb-4">
+                New Year Offer - 10% OFF until January 30th!
               </div>
             )}
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="text-5xl font-bold">${price}</span>
               <span className="text-gray-600">/month</span>
             </div>
-            {isPromoValid() && (
+            {(isDecember || isJanuaryPromo) && (
               <div className="text-gray-500 line-through mb-2">Regular $20/month</div>
             )}
           </div>
