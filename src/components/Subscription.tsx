@@ -51,7 +51,7 @@ export const Subscription = () => {
         >
           <div className="text-center mb-8">
             {isPromoValid() && (
-              <div className="bg-red-100 text-red-700 px-4 py-2 rounded-lg mb-4">
+              <div className="bg-red-100 text-red-700 px-4 py-2 rounded-lg mb-4 font-semibold">
                 Special New Year Offer - 50% OFF until January 30th!
               </div>
             )}
@@ -60,7 +60,7 @@ export const Subscription = () => {
               <span className="text-gray-600">/month</span>
             </div>
             {isPromoValid() && (
-              <div className="text-gray-500 line-through mb-2">Regular $20/month</div>
+              <div className="text-red-500 line-through font-medium mb-2">Regular $20/month</div>
             )}
           </div>
 
