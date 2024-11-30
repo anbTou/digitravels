@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MessageCircle, X } from "lucide-react";
+import { MessageCircle, X, Send } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -7,9 +7,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { Input } from "@/components/ui/input";
 
 export function WelcomeChat() {
   const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     // Show chat after a short delay
@@ -19,6 +21,20 @@ export function WelcomeChat() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const handleSendMessage = () => {
+    if (message.trim()) {
+      // Here you would typically handle sending the message
+      console.log("Message sent:", message);
+      setMessage("");
+    }
+  };
+
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSendMessage();
+    }
+  };
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
@@ -34,16 +50,33 @@ export function WelcomeChat() {
               Welcome to Digi Travels!
             </SheetTitle>
           </SheetHeader>
-          <div className="space-y-4">
-            <p className="text-travel-600">How can I assist you today?</p>
-            <div className="space-y-2 text-travel-700">
-              <p>Are you looking for accommodation?</p>
-              <p>Where would you like to stay?</p>
-              <p>And what are your dates?</p>
+          <div className="flex flex-col h-[calc(100%-180px)]">
+            <div className="flex-grow space-y-4 overflow-y-auto mb-4">
+              <p className="text-travel-600">How can I assist you today?</p>
+              <div className="space-y-2 text-travel-700">
+                <p>Are you looking for accommodation?</p>
+                <p>Where would you like to stay?</p>
+                <p>And what are your dates?</p>
+              </div>
+              <p className="text-travel-600 italic mt-4">
+                Share these details with me, and I'll provide you with personalized suggestions!
+              </p>
             </div>
-            <p className="text-travel-600 italic mt-4">
-              Share these details with me, and I'll provide you with personalized suggestions!
-            </p>
+            <div className="flex gap-2 mt-auto">
+              <Input
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                onKeyPress={handleKeyPress}
+                placeholder="Type your message..."
+                className="flex-grow"
+              />
+              <button
+                onClick={handleSendMessage}
+                className="bg-travel-600 hover:bg-travel-700 text-white p-2 rounded-full"
+              >
+                <Send className="h-5 w-5" />
+              </button>
+            </div>
           </div>
           <button 
             onClick={() => setOpen(false)}
