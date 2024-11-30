@@ -85,6 +85,24 @@ export const Promotions = () => {
             </motion.div>
           ))}
         </div>
+        
+        <div className="mt-12 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <Button
+              variant="default"
+              size="lg"
+              className="bg-travel-600 hover:bg-travel-700"
+              onClick={() => window.location.href = 'www.digitravels.io/bestdeals'}
+            >
+              View more
+            </Button>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
