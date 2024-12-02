@@ -48,13 +48,13 @@ export function WelcomeChat() {
           </button>
         </SheetTrigger>
         <SheetContent side="right" className="w-[400px] sm:max-w-[400px] p-6">
-          <SheetHeader className="mb-6">
+          <SheetHeader className="mb-4">
             <SheetTitle className="text-xl font-semibold text-center text-travel-800">
               Welcome to Digi Travels!
             </SheetTitle>
           </SheetHeader>
-          <div className="flex flex-col h-[calc(100%-180px)]">
-            <div className="flex-grow space-y-4 overflow-y-auto mb-4">
+          <div className="flex flex-col h-[calc(100vh-200px)]">
+            <div className="flex-grow mb-4">
               <ChatContent showThankYou={showThankYou} />
             </div>
             {!showThankYou && (
