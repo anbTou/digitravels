@@ -59,11 +59,20 @@ export function WelcomeChat() {
             <div className="flex-grow space-y-4 overflow-y-auto mb-4">
               {!showThankYou ? (
                 <>
-                  <p className="text-travel-600">How can I assist you today?</p>
-                  <div className="space-y-2 text-travel-700">
-                    <p>Are you looking for accommodation?</p>
-                    <p>Where would you like to stay?</p>
-                    <p>And what are your dates?</p>
+                  <p className="text-black font-medium">How can I assist you today?</p>
+                  <div className="bg-gray-50 p-4 rounded-lg space-y-3">
+                    <p className="text-travel-700 flex items-start">
+                      <span className="mr-2">•</span>
+                      Are you looking for accommodation?
+                    </p>
+                    <p className="text-travel-700 flex items-start">
+                      <span className="mr-2">•</span>
+                      Where would you like to stay?
+                    </p>
+                    <p className="text-travel-700 flex items-start">
+                      <span className="mr-2">•</span>
+                      And what are your dates?
+                    </p>
                   </div>
                   <p className="text-travel-600 italic mt-4">
                     Share these details with me, and I'll provide you with personalized suggestions!
