@@ -95,7 +95,7 @@ export function WelcomeChat() {
                 </div>
               )}
             </div>
-            <div className="space-y-4">
+            <div className="space-y-4 mt-8">
               <Input
                 value={name}
                 onChange={(e) => setName(e.target.value)}
