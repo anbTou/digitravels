@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MessageCircle, X, Send } from "lucide-react";
+import { MessageCircle, X } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -7,8 +7,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { ChatContent } from "./chat/ChatContent";
+import { ChatInput } from "./chat/ChatInput";
 
 export function WelcomeChat() {
   const [open, setOpen] = useState(false);
@@ -18,7 +18,6 @@ export function WelcomeChat() {
   const [showThankYou, setShowThankYou] = useState(false);
 
   useEffect(() => {
-    // Show chat after a short delay
     const timer = setTimeout(() => {
       setOpen(true);
     }, 2000);
@@ -28,7 +27,6 @@ export function WelcomeChat() {
 
   const handleSendMessage = () => {
     if (name.trim() && email.trim() && message.trim()) {
-      // Here you would typically handle sending the message
       console.log("Message sent:", { name, email, message });
       setMessage("");
       setShowThankYou(true);
@@ -57,78 +55,20 @@ export function WelcomeChat() {
           </SheetHeader>
           <div className="flex flex-col h-[calc(100%-180px)]">
             <div className="flex-grow space-y-4 overflow-y-auto mb-4">
-              {!showThankYou ? (
-                <>
-                  <p className="text-black font-medium">How can I assist you today?</p>
-                  <div className="bg-gray-50 p-4 rounded-lg space-y-2">
-                    <p className="text-travel-700 flex items-start">
-                      <span className="mr-2">•</span>
-                      Are you looking for accommodation?
-                    </p>
-                    <p className="text-travel-700 flex items-start">
-                      <span className="mr-2">•</span>
-                      Where would you like to stay?
-                    </p>
-                    <p className="text-travel-700 flex items-start">
-                      <span className="mr-2">•</span>
-                      And what are your dates?
-                    </p>
-                  </div>
-                  <p className="text-travel-600 italic mt-4">
-                    Share these details with me, and I'll provide you with personalized suggestions!
-                  </p>
-                </>
-              ) : (
-                <div className="space-y-4 text-travel-600">
-                  <p className="font-semibold">Thank you for your message!</p>
-                  <p>We will get back to you as soon as possible with personalized recommendations.</p>
-                  <a 
-                    href="https://www.digitravels.io/agency" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block mt-4"
-                  >
-                    <Button className="w-full bg-travel-600 hover:bg-travel-700 text-white">
-                      Explore options and best prices
-                    </Button>
-                  </a>
-                </div>
-              )}
+              <ChatContent showThankYou={showThankYou} />
             </div>
-            <div className="space-y-4 mt-8">
-              <Input
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Your name *"
-                required
-                className="flex-grow"
+            {!showThankYou && (
+              <ChatInput
+                name={name}
+                email={email}
+                message={message}
+                onNameChange={setName}
+                onEmailChange={setEmail}
+                onMessageChange={setMessage}
+                onSend={handleSendMessage}
+                onKeyPress={handleKeyPress}
               />
-              <Input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email *"
-                required
-                className="flex-grow"
-              />
-              <div className="flex gap-2">
-                <Input
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  onKeyPress={handleKeyPress}
-                  placeholder="Type your message... *"
-                  required
-                  className="flex-grow"
-                />
-                <button
-                  onClick={handleSendMessage}
-                  disabled={!name || !email || !message}
-                  className="bg-travel-600 hover:bg-travel-700 text-white p-2 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  <Send className="h-5 w-5" />
-                </button>
-              </div>
-            </div>
+            )}
           </div>
           <button 
             onClick={() => setOpen(false)}
