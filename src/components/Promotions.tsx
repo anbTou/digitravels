@@ -86,7 +86,8 @@ export const Promotions = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center relative">
+          <div className="absolute inset-x-0 -bottom-8 h-16 bg-gradient-to-b from-transparent to-gray-100"></div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -96,7 +97,7 @@ export const Promotions = () => {
             <Button
               variant="default"
               size="lg"
-              className="bg-travel-600 hover:bg-travel-700"
+              className="bg-travel-600 hover:bg-travel-700 relative z-10"
               onClick={() => window.location.href = 'www.digitravels.io/bestdeals'}
             >
               View more
