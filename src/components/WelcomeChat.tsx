@@ -60,7 +60,7 @@ export function WelcomeChat() {
               {!showThankYou ? (
                 <>
                   <p className="text-black font-medium">How can I assist you today?</p>
-                  <div className="bg-gray-50 p-4 rounded-lg space-y-3">
+                  <div className="bg-gray-50 p-4 rounded-lg space-y-2">
                     <p className="text-travel-700 flex items-start">
                       <span className="mr-2">•</span>
                       Are you looking for accommodation?
