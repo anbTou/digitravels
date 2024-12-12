@@ -37,7 +37,7 @@ export const SocialAndContact = () => {
                 >
                   <div className="w-24 h-24 rounded-lg overflow-hidden mx-auto">
                     <img
-                      src="https://images.unsplash.com/photo-1582562124811-c09040d0a901"
+                      src="/lovable-uploads/baec2b57-228d-4cc2-ae81-3753436779c4.png"
                       alt="Instagram"
                       className="w-full h-full object-cover transition-transform group-hover:scale-110"
                     />
