@@ -45,7 +45,7 @@ export const SocialAndContact = () => {
                   <p className="mt-2 text-travel-600 font-medium">Instagram</p>
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/digitravels"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group"
@@ -53,11 +53,11 @@ export const SocialAndContact = () => {
                   <div className="w-24 h-24 rounded-lg overflow-hidden mx-auto">
                     <img
                       src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc"
-                      alt="Twitter"
+                      alt="X / Twitter"
                       className="w-full h-full object-cover transition-transform group-hover:scale-110"
                     />
                   </div>
-                  <p className="mt-2 text-travel-600 font-medium">Twitter</p>
+                  <p className="mt-2 text-travel-600 font-medium">X / Twitter</p>
                 </a>
               </div>
             </div>
