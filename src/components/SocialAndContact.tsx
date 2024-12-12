@@ -30,7 +30,7 @@ export const SocialAndContact = () => {
               <h2 className="text-3xl font-bold mb-8">Connect With Us</h2>
               <div className="flex justify-center gap-6">
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/digitravels.io/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group"
