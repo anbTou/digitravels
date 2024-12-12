@@ -52,7 +52,7 @@ export const SocialAndContact = () => {
                 >
                   <div className="w-24 h-24 rounded-lg overflow-hidden mx-auto">
                     <img
-                      src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc"
+                      src="/lovable-uploads/0e13256e-f9a1-4028-bb4b-4d4556da468e.png"
                       alt="X / Twitter"
                       className="w-full h-full object-cover transition-transform group-hover:scale-110"
                     />
