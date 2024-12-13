@@ -9,7 +9,7 @@ const paymentOptions = [
     referralLink: "https://paypal.com/referral",
   },
   {
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+    image: "/lovable-uploads/d675bcd9-4e11-4ff6-bfdd-75cf6b07fea0.png",
     title: "Revolut",
     description: "Digital banking with great exchange rates",
     referralLink: "https://revolut.com/referral",
