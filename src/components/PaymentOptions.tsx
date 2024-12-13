@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const paymentOptions = [
   {
-    image: "/lovable-uploads/1c188649-fae4-451a-8425-2e23fd04d4ba.png",
+    image: "/lovable-uploads/98d3b929-5e52-4036-8463-6e3005c451e0.png",
     title: "PayPal",
     description: "Fast and secure payments with buyer protection",
     referralLink: "https://paypal.com/referral",
