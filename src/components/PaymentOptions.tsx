@@ -15,7 +15,7 @@ const paymentOptions = [
     referralLink: "https://revolut.com/referral",
   },
   {
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: "/lovable-uploads/3ca08fee-0adf-4dc2-9407-390a3671a158.png",
     title: "Binance",
     description: "Cryptocurrency payments with low fees",
     referralLink: "https://binance.com/referral",
