@@ -112,7 +112,7 @@ export const PremiumDestinations = () => {
               className="bg-travel-600 hover:bg-travel-700 relative z-10"
               onClick={() => window.location.href = 'www.digitravels.io/bestdeals'}
             >
-              View more
+              Book Now
             </Button>
           </motion.div>
         </div>

@@ -3,6 +3,11 @@ import { motion } from "framer-motion";
 import { DigiTravelLogo } from "@/components/DigiTravelLogo";
 
 export const Hero = () => {
+  const scrollToSubscribe = () => {
+    const subscribeSection = document.querySelector('#subscribe-section');
+    subscribeSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
@@ -18,8 +23,6 @@ export const Hero = () => {
       <div className="container relative z-10 text-center">
         <DigiTravelLogo 
           className="mb-12 mx-auto"
-          // To use an image logo, uncomment and add your image path:
-          // imageSrc="/path-to-your-logo.png"
         />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,12 +39,22 @@ export const Hero = () => {
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
             Experience luxury travel with better prices and exclusive subscription benefits.
           </p>
-          <Button
-            size="lg"
-            className="bg-white text-travel-900 hover:bg-white/90 transition-all duration-300"
-          >
-            Start Exploring
-          </Button>
+          <div className="flex justify-center gap-4">
+            <Button
+              size="lg"
+              className="bg-white text-travel-900 hover:bg-white/90 transition-all duration-300"
+            >
+              Start Exploring
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-white text-white hover:bg-white/20"
+              onClick={scrollToSubscribe}
+            >
+              Subscribe
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>

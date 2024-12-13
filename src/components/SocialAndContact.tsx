@@ -7,11 +7,22 @@ import { useToast } from "@/components/ui/use-toast";
 export const SocialAndContact = () => {
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    // In a real implementation, you would send this to your backend
+    // For now, we'll just show a success message
+    console.log('Sending email to digitravels.io@gmail.com', {
+      from: email,
+      message: message
+    });
+
     toast({
       title: "Message sent!",
-      description: "We'll get back to you soon.",
+      description: "We'll get back to you soon at " + email,
     });
   };
 
@@ -69,6 +80,7 @@ export const SocialAndContact = () => {
                 <div>
                   <Input
                     type="email"
+                    name="email"
                     placeholder="Your email"
                     required
                     className="w-full"
@@ -76,6 +88,7 @@ export const SocialAndContact = () => {
                 </div>
                 <div>
                   <Textarea
+                    name="message"
                     placeholder="Your message"
                     required
                     className="w-full min-h-[120px]"
