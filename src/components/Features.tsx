@@ -20,7 +20,7 @@ const features = [
   {
     icon: Wallet,
     title: "Seamless Payments",
-    description: "137 currencies, cards (VISA, Mastercard, Amex), digital wallets (PayPal, Google/Apple Pay), and cryptocurrencies via BitPay.",
+    description: "Debit/Credit card (Visa, Mastercard, Amex), Digital Wallets (PayPal, Google Pay, Apple Pay), Cryptocurrencies (Bitcoin and altcoins)",
   },
 ];
 
