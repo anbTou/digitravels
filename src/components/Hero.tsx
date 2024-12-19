@@ -48,7 +48,7 @@ export const Hero = () => {
             </Button>
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-white border-none"
+              className="bg-[#005488] hover:bg-[#005488]/90 text-white border-none"
               onClick={scrollToSubscribe}
             >
               Subscribe
