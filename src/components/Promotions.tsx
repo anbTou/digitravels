@@ -75,12 +75,18 @@ export const Promotions = () => {
                 <h3 className="text-2xl font-bold mb-1">{promo.title}</h3>
                 <p className="text-white/90 mb-4">{promo.location}</p>
                 <p className="text-xl font-semibold mb-4">{promo.price}</p>
-                <Button
-                  variant="outline"
-                  className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 text-white w-full"
+                <a 
+                  href="http://booking.digitravels.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Book Now
-                </Button>
+                  <Button
+                    variant="outline"
+                    className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 text-white w-full"
+                  >
+                    View more
+                  </Button>
+                </a>
               </div>
             </motion.div>
           ))}
@@ -95,7 +101,7 @@ export const Promotions = () => {
             transition={{ duration: 0.5 }}
           >
             <a 
-              href="http://booking.digitravels.io/"
+              href="http://booking.digitravels.io"
               target="_blank"
               rel="noopener noreferrer"
             >

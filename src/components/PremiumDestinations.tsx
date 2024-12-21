@@ -92,7 +92,13 @@ export const PremiumDestinations = () => {
                     ${destination.originalPrice}
                   </span>
                 </div>
-                <Button className="w-full">Book Now</Button>
+                <a 
+                  href="http://booking.digitravels.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full">View more</Button>
+                </a>
               </div>
             </motion.div>
           ))}
@@ -107,7 +113,7 @@ export const PremiumDestinations = () => {
             transition={{ duration: 0.5 }}
           >
             <a 
-              href="http://booking.digitravels.io/"
+              href="http://booking.digitravels.io"
               target="_blank"
               rel="noopener noreferrer"
             >
