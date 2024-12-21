@@ -94,14 +94,19 @@ export const Promotions = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <Button
-              variant="default"
-              size="lg"
-              className="bg-travel-600 hover:bg-travel-700 relative z-10"
-              onClick={() => window.location.href = 'www.digitravels.io/bestdeals'}
+            <a 
+              href="http://booking.digitravels.io/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              View more
-            </Button>
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-travel-600 hover:bg-travel-700 relative z-10"
+              >
+                View more
+              </Button>
+            </a>
           </motion.div>
         </div>
       </div>

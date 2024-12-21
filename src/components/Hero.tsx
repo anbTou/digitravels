@@ -40,12 +40,18 @@ export const Hero = () => {
             Experience luxury travel with better prices and exclusive subscription benefits.
           </p>
           <div className="flex justify-center gap-4">
-            <Button
-              size="lg"
-              className="bg-white text-travel-900 hover:bg-white/90 transition-all duration-300"
+            <a 
+              href="http://booking.digitravels.io/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Start Exploring
-            </Button>
+              <Button
+                size="lg"
+                className="bg-white text-travel-900 hover:bg-white/90 transition-all duration-300"
+              >
+                Start Exploring
+              </Button>
+            </a>
             <Button
               size="lg"
               className="bg-[#005488] hover:bg-[#005488]/90 text-white border-none"
