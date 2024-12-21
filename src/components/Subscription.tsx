@@ -65,6 +65,10 @@ export const Subscription = () => {
           <ul className="space-y-4 mb-8">
             <li className="flex items-center gap-3">
               <Check className="w-5 h-5 text-green-500" />
+              <span>14 days trial</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <Check className="w-5 h-5 text-green-500" />
               <span>No booking fees</span>
             </li>
             <li className="flex items-center gap-3">
