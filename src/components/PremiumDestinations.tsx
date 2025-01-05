@@ -93,7 +93,7 @@ export const PremiumDestinations = () => {
                   </span>
                 </div>
                 <a 
-                  href="http://booking.digitravels.io"
+                  href="https://booking.digitravels.io"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -113,7 +113,7 @@ export const PremiumDestinations = () => {
             transition={{ duration: 0.5 }}
           >
             <a 
-              href="http://booking.digitravels.io"
+              href="https://booking.digitravels.io"
               target="_blank"
               rel="noopener noreferrer"
             >

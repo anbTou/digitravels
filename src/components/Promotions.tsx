@@ -76,7 +76,7 @@ export const Promotions = () => {
                 <p className="text-white/90 mb-4">{promo.location}</p>
                 <p className="text-xl font-semibold mb-4">{promo.price}</p>
                 <a 
-                  href="http://booking.digitravels.io"
+                  href="https://booking.digitravels.io"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -101,7 +101,7 @@ export const Promotions = () => {
             transition={{ duration: 0.5 }}
           >
             <a 
-              href="http://booking.digitravels.io"
+              href="https://booking.digitravels.io"
               target="_blank"
               rel="noopener noreferrer"
             >
