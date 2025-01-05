@@ -5,7 +5,7 @@ interface DigiTravelLogoProps {
   imageSrc?: string;
 }
 
-export const DigiTravelLogo = ({ className = '' }: DigiTravelLogoProps) => {
+export const DigiTravelLogo = ({ className = '', imageSrc }: DigiTravelLogoProps) => {
   return (
     <a 
       href="https://booking.digitravels.io/"
@@ -13,7 +13,11 @@ export const DigiTravelLogo = ({ className = '' }: DigiTravelLogoProps) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span className="text-xl font-bold text-[#005488]">Digi Travels</span>
+      <img 
+        src="/lovable-uploads/253ef851-0ef8-4f76-a182-567284b28778.png" 
+        alt="Digi Travels Logo" 
+        className="h-16 w-auto"
+      />
     </a>
   );
 };
