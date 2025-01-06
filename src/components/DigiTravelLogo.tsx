@@ -16,7 +16,7 @@ export const DigiTravelLogo = ({ className = '' }: DigiTravelLogoProps) => {
       <img 
         src="/lovable-uploads/7fc651a9-7ea7-424b-ad87-7293de76a7d4.png" 
         alt="DigiTravels Logo" 
-        className="h-8 w-auto"
+        className="h-8 w-auto hidden"
       />
     </a>
   );
