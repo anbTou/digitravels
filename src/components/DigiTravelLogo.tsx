@@ -13,7 +13,6 @@ export const DigiTravelLogo = ({ className = '', imageSrc }: DigiTravelLogoProps
       target="_blank"
       rel="noopener noreferrer"
     >
-      DigiTravels
     </a>
   );
 };
