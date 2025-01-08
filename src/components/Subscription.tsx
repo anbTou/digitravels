@@ -50,7 +50,7 @@ export const Subscription = () => {
           <div className="text-center mb-8">
             {isPromoValid() && (
               <div className="bg-red-100 text-red-700 px-4 py-2 rounded-lg mb-4 font-semibold">
-                Special New Year Offer - 50% OFF until January 30th!
+                Digi Travels Special Launch Discount - 4,5€/month (Paid yearly 54€)
               </div>
             )}
             <div className="flex items-center justify-center gap-2 mb-2">
@@ -58,7 +58,7 @@ export const Subscription = () => {
               <span className="text-gray-600">/month</span>
             </div>
             {isPromoValid() && (
-              <div className="text-red-500 line-through font-medium mb-2">Regular $20/month</div>
+              <div className="text-red-500 line-through font-medium mb-2">Regular price 80€/year - monthly 6,67€</div>
             )}
           </div>
 
