@@ -9,7 +9,7 @@ export const Subscription = () => {
   // In production, you would want to use the actual date check
   const isPromoValid = () => true;
   
-  const price = isPromoValid() ? 10 : 20; // 50% off regular price of $20
+  const price = isPromoValid() ? 6.67 : 20; // Regular price is 80€/year (6.67€/month)
 
   const handleSubscribe = () => {
     toast({
@@ -54,11 +54,11 @@ export const Subscription = () => {
               </div>
             )}
             <div className="flex items-center justify-center gap-2 mb-2">
-              <span className="text-5xl font-bold">${price}</span>
+              <span className="text-5xl font-bold">€{price}</span>
               <span className="text-gray-600">/month</span>
             </div>
             {isPromoValid() && (
-              <div className="text-red-500 line-through font-medium mb-2">Regular price 80€/year - monthly 6,67€</div>
+              <div className="text-red-500 line-through font-medium mb-2">Regular yearly price 80€</div>
             )}
           </div>
 
