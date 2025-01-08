@@ -1,6 +1,33 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Tag } from "lucide-react";
+import { Tag, Percent } from "lucide-react";
+
+const promotions = [
+  {
+    title: "Early Bird Summer Special",
+    description: "Book your summer vacation now and save big!",
+    discount: "25% OFF",
+    validUntil: "Valid until April 30th",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    destinations: ["Greece", "Spain", "Italy"]
+  },
+  {
+    title: "Family Package Deal",
+    description: "Kids stay free at selected resorts",
+    discount: "Kids Free",
+    validUntil: "Valid for summer bookings",
+    image: "https://images.unsplash.com/photo-1602002418816-5c0aeef426aa",
+    destinations: ["Orlando", "Cancun", "Phuket"]
+  },
+  {
+    title: "Luxury Escape",
+    description: "5-star resorts at 3-star prices",
+    discount: "30% OFF",
+    validUntil: "Limited time offer",
+    image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d",
+    destinations: ["Maldives", "Bali", "Seychelles"]
+  }
+];
 
 const regions = [
   {
@@ -73,6 +100,63 @@ const BestDeals = () => {
               Exclusive deals and special offers on our most popular destinations
             </p>
           </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {promotions.map((promo, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden group"
+              >
+                <div className="relative">
+                  <div className="aspect-[16/9] overflow-hidden">
+                    <img
+                      src={promo.image}
+                      alt={promo.title}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    />
+                  </div>
+                  <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1.5 rounded-full flex items-center gap-1">
+                    <Percent className="w-4 h-4" />
+                    <span className="font-semibold">{promo.discount}</span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    {promo.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4">{promo.description}</p>
+                  <div className="space-y-2">
+                    <p className="text-sm text-gray-500">{promo.validUntil}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {promo.destinations.map((destination, i) => (
+                        <span
+                          key={i}
+                          className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-full"
+                        >
+                          {destination}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div className="p-6 pt-0">
+                  <a 
+                    href="https://booking.digitravels.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="w-full bg-primary hover:bg-primary/90">
+                      Book Now
+                    </Button>
+                  </a>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
