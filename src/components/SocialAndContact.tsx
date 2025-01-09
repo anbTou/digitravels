@@ -10,19 +10,20 @@ export const SocialAndContact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
-    const email = formData.get('email');
-    const message = formData.get('message');
+    const email = formData.get('email') as string;
+    const message = formData.get('message') as string;
 
-    // In a real implementation, you would send this to your backend
-    // For now, we'll just show a success message
-    console.log('Sending email to digitravels.io@gmail.com', {
-      from: email,
-      message: message
-    });
+    // Create mailto link
+    const mailtoLink = `mailto:digitravels.io@gmail.com?subject=Contact Form Submission&body=${encodeURIComponent(
+      `Message from: ${email}\n\n${message}`
+    )}`;
+
+    // Open default email client
+    window.location.href = mailtoLink;
 
     toast({
-      title: "Message sent!",
-      description: "We'll get back to you soon at " + email,
+      title: "Opening email client",
+      description: "Your message will be sent to digitravels.io@gmail.com",
     });
   };
 
