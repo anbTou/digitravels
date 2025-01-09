@@ -12,11 +12,7 @@ export const DigiTravelLogo = ({ className = '', onClick }: DigiTravelLogoProps)
       onClick={onClick}
       style={{ cursor: 'pointer' }}
     >
-      <img 
-        src="/lovable-uploads/7fc651a9-7ea7-424b-ad87-7293de76a7d4.png" 
-        alt="DigiTravels Logo" 
-        className="h-8 w-auto"
-      />
+      <span className="text-xl font-bold text-primary">DigiTravels</span>
     </div>
   );
 };
