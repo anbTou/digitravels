@@ -12,7 +12,6 @@ export const DigiTravelLogo = ({ className = '', onClick }: DigiTravelLogoProps)
       onClick={onClick}
       style={{ cursor: 'pointer' }}
     >
-      <span className="text-xl font-bold text-primary">DigiTravels</span>
     </div>
   );
 };
