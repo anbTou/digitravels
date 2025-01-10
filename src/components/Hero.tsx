@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { DigiTravelLogo } from "@/components/DigiTravelLogo";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
   const scrollToSubscribe = () => {
     const subscribeSection = document.querySelector('#subscribe-section');
     subscribeSection?.scrollIntoView({ behavior: 'smooth' });
@@ -55,7 +58,7 @@ export const Hero = () => {
             <Button
               size="lg"
               className="bg-[#005488] hover:bg-[#005488]/90 text-white border-none"
-              onClick={scrollToSubscribe}
+              onClick={() => navigate('/subscription')}
             >
               Subscribe
             </Button>
