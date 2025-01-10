@@ -13,13 +13,13 @@ export const SocialAndContact = () => {
     const email = formData.get('email') as string;
     const message = formData.get('message') as string;
 
-    // Create mailto link
-    const mailtoLink = `mailto:digitravels.io@gmail.com?subject=Contact Form Submission&body=${encodeURIComponent(
+    // Create mailto link with proper encoding
+    const mailtoLink = `mailto:digitravels.io@gmail.com?subject=${encodeURIComponent('Contact Form Submission')}&body=${encodeURIComponent(
       `Message from: ${email}\n\n${message}`
     )}`;
 
     // Open default email client
-    window.location.href = mailtoLink;
+    window.open(mailtoLink);
 
     toast({
       title: "Opening email client",
