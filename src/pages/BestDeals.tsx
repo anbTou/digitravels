@@ -77,6 +77,9 @@ const categories = {
 const BestDeals = () => {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Black space above header */}
+      <div className="h-16 bg-black w-full" />
+      
       {/* Hero Section */}
       <section className="relative h-[50vh] bg-gray-900">
         <div className="absolute inset-0">
