@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { categories } from "@/constants/destinations";
 import DealsHero from "@/components/deals/DealsHero";
 import DestinationSection from "@/components/deals/DestinationSection";
+import { Button } from "@/components/ui/button";
 
 const BestDeals = () => {
   return (
@@ -14,7 +15,7 @@ const BestDeals = () => {
       {/* Categories Section */}
       <section className="py-16 container mx-auto px-4">
         {Object.entries(categories).map(([continentKey, continent], index) => (
-          <div key={continentKey} className="mb-16">
+          <div key={continentKey}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -32,6 +33,30 @@ const BestDeals = () => {
                 section={section}
               />
             ))}
+
+            {/* View more options button */}
+            <div className="mt-12 mb-16 text-center">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <a 
+                  href="https://booking.digitravels.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    variant="default"
+                    size="lg"
+                    className="bg-travel-600 hover:bg-travel-700"
+                  >
+                    View more options
+                  </Button>
+                </a>
+              </motion.div>
+            </div>
           </div>
         ))}
       </section>
