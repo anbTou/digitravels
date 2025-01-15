@@ -13,7 +13,7 @@ export const Header = () => {
   const navigate = useNavigate();
 
   const handleLogoClick = () => {
-    window.open('https://booking.digitravels.io', '_blank', 'noopener,noreferrer');
+    window.open('https://booking.digitravels.io', '_blank');
   };
 
   return (
