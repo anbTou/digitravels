@@ -13,8 +13,12 @@ export const DigiTravelLogo = ({ className = '', onClick }: DigiTravelLogoProps)
       style={{ cursor: 'pointer' }}
     >
       {/* Top space for square logo */}
-      <div className="w-32 h-32 bg-gray-100 rounded-lg flex items-center justify-center border-2 border-dashed border-gray-300">
-        <span className="text-gray-500">Square Logo Space</span>
+      <div className="w-32 h-32 bg-[#005488] rounded-lg flex items-center justify-center">
+        <img 
+          src="/lovable-uploads/0f8cb71a-1993-40a5-92ae-4e8150311a9d.png" 
+          alt="Digi Travels Globe Logo"
+          className="w-24 h-24 object-contain"
+        />
       </div>
 
       {/* Bottom space for different image */}
