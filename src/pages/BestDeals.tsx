@@ -43,7 +43,7 @@ const BestDeals = () => {
                 transition={{ duration: 0.5 }}
               >
                 <a 
-                  href="https://booking.digitravels.io"
+                  href="http://booking.digitravels.io"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
