@@ -9,7 +9,7 @@ export const Subscription = () => {
   // In production, you would want to use the actual date check
   const isPromoValid = () => true;
   
-  const price = isPromoValid() ? 6.67 : 20; // Regular price is 80€/year (6.67€/month)
+  const price = isPromoValid() ? 7 : 20; // Regular price is 84$/year (7€/month)
 
   const handleSubscribe = () => {
     toast({
