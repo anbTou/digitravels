@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { HeroLogo } from "@/components/HeroLogo";
 import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
@@ -24,9 +23,6 @@ export const Hero = () => {
       </div>
       
       <div className="container relative z-10 text-center">
-        <HeroLogo 
-          className="mb-12 mx-auto"
-        />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
