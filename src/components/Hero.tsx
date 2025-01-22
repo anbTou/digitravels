@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { DigiTravelLogo } from "@/components/DigiTravelLogo";
+import { HeroLogo } from "@/components/HeroLogo";
 import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
@@ -24,7 +24,7 @@ export const Hero = () => {
       </div>
       
       <div className="container relative z-10 text-center">
-        <DigiTravelLogo 
+        <HeroLogo 
           className="mb-12 mx-auto"
         />
         <motion.div
