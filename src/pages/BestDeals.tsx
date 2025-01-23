@@ -34,7 +34,7 @@ const BestDeals = () => {
               />
             ))}
 
-            {/* View more options button */}
+            {/* Find Out More Deals button */}
             <div className="mt-12 mb-16 text-center">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ const BestDeals = () => {
                     size="lg"
                     className="bg-travel-600 hover:bg-travel-700"
                   >
-                    View more options
+                    Find Out More Deals
                   </Button>
                 </a>
               </motion.div>
