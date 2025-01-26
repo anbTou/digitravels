@@ -14,20 +14,21 @@ export const usa: Destination = {
       bookingLink: "https://booking.digitravels.io/url/a551a976-382c-4049-9334-b08575557a86?isPermanentLink=true"
     },
     {
+      title: "The St. Regis Aspen Resort",
+      location: "Aspen",
+      price: "From $1,877/night",
+      image: "/lovable-uploads/5d6b3d37-409e-46d8-880d-df95d68430e6.png",
+      discount: "Luxury Stay",
+      rating: 4.6,
+      bookingLink: "https://booking.digitravels.io/url/84fb4bc3-c0fa-4171-9952-7940bf41010f?isPermanentLink=true"
+    },
+    {
       title: "Hawaii Beach Resort",
       location: "Hawaii",
       price: "From €399/night",
       image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
       discount: "25% OFF",
       rating: 4.9,
-    },
-    {
-      title: "Aspen Ski Lodge",
-      location: "Colorado",
-      price: "From €449/night",
-      image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e",
-      discount: "30% OFF",
-      rating: 4.8,
     },
     {
       title: "Manhattan Penthouse",
