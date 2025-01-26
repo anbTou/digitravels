@@ -37,7 +37,7 @@ export const Promotions = () => {
             <div className="aspect-[4/3] overflow-hidden">
               <img
                 src="/lovable-uploads/275fe9a9-4b15-4590-a867-fd7732f8b60a.png"
-                alt="Hotel Mousai Cancun 5*"
+                alt="Hotel Mousai Ocean Front"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 loading="lazy"
               />
@@ -47,11 +47,11 @@ export const Promotions = () => {
               <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-sm mb-3">
                 40% off
               </span>
-              <h3 className="text-xl font-bold mb-1">Hotel Mousai Cancun 5*</h3>
+              <h3 className="text-xl font-bold mb-1">Hotel Mousai Ocean Front</h3>
               <p className="text-white/90 mb-4">Mexico</p>
               <p className="text-xl font-semibold mb-4">From $780/night</p>
               <a 
-                href="https://visitsagres.booking.xeni.com/url/2267dbb2-5ceb-4ab0-a21b-0fb4d5595a56"
+                href="https://booking.digitravels.io/url/e8f52a7f-0814-4c79-bb86-66899518b897"
                 target="_blank"
                 rel="noopener noreferrer"
               >
