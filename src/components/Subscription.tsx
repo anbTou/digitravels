@@ -5,16 +5,16 @@ import { useToast } from "@/components/ui/use-toast";
 
 export const Subscription = () => {
   const { toast } = useToast();
-  // For testing purposes, we'll make isPromoValid always return true
-  // In production, you would want to use the actual date check
   const isPromoValid = () => true;
+  const price = isPromoValid() ? 7 : 20;
   
-  const price = isPromoValid() ? 7 : 20; // Regular price is 84$/year (7$/month)
+  const stripeCheckoutUrl = "https://buy.stripe.com/cN229r9TNa2N3AI8ww";
 
   const handleSubscribe = () => {
+    window.location.href = stripeCheckoutUrl;
     toast({
-      title: "Subscription initiated",
-      description: "You will be redirected to the payment page.",
+      title: "Redirecting to payment",
+      description: "You will be redirected to the secure payment page.",
     });
   };
 
