@@ -5,12 +5,13 @@ export const europe: Destination = {
   description: "Discover the charm and elegance of Europe's most iconic destinations.",
   listings: [
     {
-      title: "First Listing",
-      location: "Location 1",
-      price: "$100 per night",
-      image: "/path/to/image1.png",
-      discount: "10% off",
-      rating: 4.5,
+      title: "Thireas Hotel",
+      location: "Santorini, Greece",
+      price: "From $150.53 per night",
+      image: "/lovable-uploads/0267cc81-447a-43c1-a54f-21b064c5fbf4.png",
+      discount: "Special Rate",
+      rating: 4.7,
+      bookingLink: "https://booking.digitravels.io/url/de2a1a2a-ab94-4592-a77b-8cba3b1d68b7?isPermanentLink=true"
     },
     {
       title: "Hôtel de La Cigogne",
