@@ -4,8 +4,10 @@ import { useToast } from "@/components/ui/use-toast";
 
 export const SubscriptionFooter = () => {
   const { toast } = useToast();
+  const stripeCheckoutUrl = "https://buy.stripe.com/cN229r9TNa2N3AI8ww";
 
   const handleActivate = () => {
+    window.location.href = stripeCheckoutUrl;
     toast({
       title: "Subscription activation initiated",
       description: "You will be redirected to the payment page.",
