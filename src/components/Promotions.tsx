@@ -51,7 +51,7 @@ export const Promotions = () => {
               <p className="text-white/90 mb-4">Mexico</p>
               <p className="text-xl font-semibold mb-4">From $780/night</p>
               <a 
-                href="https://visitsagres.booking.xeni.com/url/2267dbb2-5ceb-4ab0-a21b-0fb4d5595a56"
+                href="https://visitsagres.booking.xeni.com/url/1d16a809-052e-4565-a2a7-0044f57ca5ba"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -141,7 +141,6 @@ export const Promotions = () => {
               </a>
             </div>
           </motion.div>
-
         </div>
         
         <div className="mt-12 text-center relative">
