@@ -30,14 +30,6 @@ export const usa: Destination = {
       discount: "Special Offer",
       rating: 4.3,
       bookingLink: "https://booking.digitravels.io/url/d2f8a73e-e45e-4185-bc3e-7862109545e6?isPermanentLink=true"
-    },
-    {
-      title: "Manhattan Penthouse",
-      location: "New York",
-      price: "From €499/night",
-      image: "https://images.unsplash.com/photo-1496307653780-42ee777d4833",
-      discount: "20% OFF",
-      rating: 4.7,
-    },
+    }
   ],
 };
