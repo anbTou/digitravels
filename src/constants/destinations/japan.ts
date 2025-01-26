@@ -23,12 +23,13 @@ export const japan: Destination = {
       bookingLink: "https://booking.digitravels.io/url/a81a28d7-6ece-42b7-a58b-6d1146d4161f?isPermanentLink=true"
     },
     {
-      title: "Okinawa Resort",
-      location: "Okinawa",
-      price: "From €279/night",
+      title: "Hotel Nikko Alivila",
+      location: "Gima Yomitan Son, Yomitan",
+      price: "From $157/night",
       image: "https://images.unsplash.com/photo-1542640244-7e672d6cef4e",
       discount: "20% OFF",
-      rating: 4.7,
+      rating: 4.6,
+      bookingLink: "https://booking.digitravels.io/url/a4632476-3196-48e8-ab7f-9f70088a9b68?isPermanentLink=true"
     },
   ],
 };
