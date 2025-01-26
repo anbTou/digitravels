@@ -5,12 +5,13 @@ export const japan: Destination = {
   description: "Experience the perfect blend of tradition and luxury",
   listings: [
     {
-      title: "Tokyo Sky Suite",
-      location: "Tokyo",
-      price: "From €299/night",
-      image: "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf",
+      title: "GOLD STAY NAGOYA OSU",
+      location: "Tachibana Naka Ward, Nagoya",
+      price: "From $281/night",
+      image: "/lovable-uploads/443fdb5d-f057-422d-8eba-3ea244cd1896.png",
       discount: "30% OFF",
       rating: 4.9,
+      bookingLink: "https://booking.digitravels.io/url/8833607b-39ca-472a-bef0-4ec7dd4eb757?isPermanentLink=true"
     },
     {
       title: "Kyoto Traditional House",
