@@ -113,8 +113,8 @@ export const Promotions = () => {
           >
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1433086966358-54859d0ed716"
-                alt="Bali Serenity"
+                src="/lovable-uploads/4ced0bf5-85a7-4f6f-870f-02901e1d795f.png"
+                alt="SLS Cancun"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 loading="lazy"
               />
@@ -122,13 +122,13 @@ export const Promotions = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
               <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-sm mb-3">
-                Free Airport Transfer
+                55% off
               </span>
-              <h3 className="text-xl font-bold mb-1">Bali Serenity</h3>
-              <p className="text-white/90 mb-4">Indonesia</p>
-              <p className="text-xl font-semibold mb-4">From $199/night</p>
+              <h3 className="text-xl font-bold mb-1">SLS Cancun</h3>
+              <p className="text-white/90 mb-4">Mexico</p>
+              <p className="text-xl font-semibold mb-4">From $225/night</p>
               <a 
-                href="https://visitsagres.booking.xeni.com/url/2267dbb2-5ceb-4ab0-a21b-0fb4d5595a56"
+                href="https://booking.digitravels.io/url/5292643b-0957-4878-9842-98fc9d635488"
                 target="_blank"
                 rel="noopener noreferrer"
               >
