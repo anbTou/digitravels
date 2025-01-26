@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import { Tag } from "lucide-react";
 
 const destinations = [
@@ -7,21 +6,18 @@ const destinations = [
     image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
     title: "Swiss Alps Adventure",
     location: "Switzerland",
-    originalPrice: 2999,
     description: "Experience the majestic Swiss Alps with our premium package including luxury accommodations and guided tours.",
   },
   {
     image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
     title: "Tropical Paradise",
     location: "Maldives",
-    originalPrice: 3499,
     description: "Escape to crystal clear waters and white sandy beaches in the Maldives with our all-inclusive resort package.",
   },
   {
     image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
     title: "Mountain Retreat",
     location: "Canadian Rockies",
-    originalPrice: 2799,
     description: "Discover the breathtaking beauty of the Canadian Rockies with our premium wilderness experience.",
   },
 ];
@@ -83,22 +79,7 @@ export const PremiumDestinations = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-2">{destination.title}</h3>
                 <p className="text-gray-600 mb-4">{destination.location}</p>
-                <p className="text-gray-700 mb-4">{destination.description}</p>
-                <div className="flex items-center gap-3 mb-6">
-                  <span className="text-2xl font-bold text-primary">
-                    ${Math.round(destination.originalPrice * 0.7)}
-                  </span>
-                  <span className="text-gray-500 line-through">
-                    ${destination.originalPrice}
-                  </span>
-                </div>
-                <a 
-                  href="https://booking.digitravels.io"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button className="w-full">View more</Button>
-                </a>
+                <p className="text-gray-700">{destination.description}</p>
               </div>
             </motion.div>
           ))}
@@ -106,26 +87,6 @@ export const PremiumDestinations = () => {
 
         <div className="mt-12 text-center relative">
           <div className="absolute inset-x-0 -bottom-8 h-16 bg-gradient-to-b from-transparent to-gray-200"></div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <a 
-              href="https://booking.digitravels.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                variant="default"
-                size="lg"
-                className="bg-travel-600 hover:bg-travel-700 relative z-10"
-              >
-                View more
-              </Button>
-            </a>
-          </motion.div>
         </div>
       </div>
     </section>
