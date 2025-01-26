@@ -6,19 +6,19 @@ const paymentOptions = [
     image: "/lovable-uploads/98d3b929-5e52-4036-8463-6e3005c451e0.png",
     title: "PayPal",
     description: "Fast and secure payments with buyer protection",
-    referralLink: "https://paypal.com/referral",
+    referralLink: "https://py.pl/giqKI",
   },
   {
     image: "/lovable-uploads/d675bcd9-4e11-4ff6-bfdd-75cf6b07fea0.png",
     title: "Revolut",
     description: "Digital banking with great exchange rates",
-    referralLink: "https://revolut.com/referral",
+    referralLink: "https://revolut.com/referral/?referral-code=lvaroghh8!FEB1-25-AR-L1",
   },
   {
     image: "/lovable-uploads/3ca08fee-0adf-4dc2-9407-390a3671a158.png",
     title: "Binance",
     description: "Cryptocurrency payments with low fees",
-    referralLink: "https://binance.com/referral",
+    referralLink: "https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00HOSQV7R1",
   },
 ];
 
