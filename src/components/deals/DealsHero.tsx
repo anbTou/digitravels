@@ -36,9 +36,15 @@ const DealsHero = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex gap-4"
           >
-            <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
-              <Search className="mr-2 h-4 w-4" /> Search Deals
-            </Button>
+            <a 
+              href="http://booking.digitravels.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
+                <Search className="mr-2 h-4 w-4" /> Search Deals
+              </Button>
+            </a>
           </motion.div>
         </div>
       </div>
