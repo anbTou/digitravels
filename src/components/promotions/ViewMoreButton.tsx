@@ -12,7 +12,7 @@ export const ViewMoreButton = () => {
         transition={{ duration: 0.5 }}
       >
         <a
-          href="https://visitsagres.booking.xeni.com/url/2267dbb2-5ceb-4ab0-a21b-0fb4d5595a56"
+          href="https://booking.digitravels.io"
           target="_blank"
           rel="noopener noreferrer"
         >
