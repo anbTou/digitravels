@@ -65,6 +65,7 @@ export const Promotions = () => {
             </div>
           </motion.div>
 
+          {/* Second Promotion */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -113,7 +114,7 @@ export const Promotions = () => {
           >
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="/lovable-uploads/4ced0bf5-85a7-4f6f-870f-02901e1d795f.png"
+                src="/lovable-uploads/816bcbbb-2dd0-4f9d-bda1-57d8ed69db6e.png"
                 alt="SLS Cancun"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 loading="lazy"
@@ -141,7 +142,6 @@ export const Promotions = () => {
               </a>
             </div>
           </motion.div>
-
         </div>
         
         <div className="mt-12 text-center relative">
