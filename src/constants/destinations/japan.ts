@@ -14,12 +14,13 @@ export const japan: Destination = {
       bookingLink: "https://booking.digitravels.io/url/8833607b-39ca-472a-bef0-4ec7dd4eb757?isPermanentLink=true"
     },
     {
-      title: "Kyoto Traditional House",
-      location: "Kyoto",
-      price: "From €259/night",
-      image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e",
+      title: "Jyoseikan",
+      location: "Kamimachi, Kochi",
+      price: "From $248/night",
+      image: "/lovable-uploads/a28311ec-e722-4dc3-8da6-c2664463bdbc.png",
       discount: "25% OFF",
-      rating: 4.8,
+      rating: 4.5,
+      bookingLink: "https://booking.digitravels.io/url/a81a28d7-6ece-42b7-a58b-6d1146d4161f?isPermanentLink=true"
     },
     {
       title: "Okinawa Resort",
