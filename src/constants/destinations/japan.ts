@@ -5,7 +5,7 @@ export const japan: Destination = {
   description: "Experience the perfect blend of tradition and luxury",
   listings: [
     {
-      title: "GOLD STAY NAGOYA OSU",
+      title: "Gold Stay Nagoya Osu",
       location: "Tachibana Naka Ward, Nagoya",
       price: "From $281/night",
       image: "/lovable-uploads/443fdb5d-f057-422d-8eba-3ea244cd1896.png",
