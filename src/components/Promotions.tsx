@@ -76,7 +76,7 @@ export const Promotions = () => {
                 <p className="text-white/90 mb-4">{promo.location}</p>
                 <p className="text-xl font-semibold mb-4">{promo.price}</p>
                 <a 
-                  href="https://booking.digitravels.io"
+                  href="https://visitsagres.booking.xeni.com/url/2267dbb2-5ceb-4ab0-a21b-0fb4d5595a56"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -101,7 +101,7 @@ export const Promotions = () => {
             transition={{ duration: 0.5 }}
           >
             <a 
-              href="https://booking.digitravels.io"
+              href="https://visitsagres.booking.xeni.com/url/2267dbb2-5ceb-4ab0-a21b-0fb4d5595a56"
               target="_blank"
               rel="noopener noreferrer"
             >
