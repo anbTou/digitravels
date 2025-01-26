@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const promotions = [
   {
     image: "/lovable-uploads/ab69c16d-ba70-4c24-b4ba-fa9077f609f9.png",
-    title: "Hotel Mousai Cancun Ocean Front Adults Only 5*",
+    title: "Hotel Mousai Cancun 5*",
     location: "Mexico",
     price: "From $780/night",
     discount: "40% off",
@@ -72,7 +72,7 @@ export const Promotions = () => {
                 <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-sm mb-3">
                   {promo.discount}
                 </span>
-                <h3 className="text-2xl font-bold mb-1">{promo.title}</h3>
+                <h3 className="text-xl font-bold mb-1">{promo.title}</h3>
                 <p className="text-white/90 mb-4">{promo.location}</p>
                 <p className="text-xl font-semibold mb-4">{promo.price}</p>
                 <a 
