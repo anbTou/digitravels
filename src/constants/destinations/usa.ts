@@ -23,12 +23,13 @@ export const usa: Destination = {
       bookingLink: "https://booking.digitravels.io/url/84fb4bc3-c0fa-4171-9952-7940bf41010f?isPermanentLink=true"
     },
     {
-      title: "Hawaii Beach Resort",
-      location: "Hawaii",
-      price: "From €399/night",
-      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      discount: "25% OFF",
-      rating: 4.9,
+      title: "Kimpton EPIC Hotel",
+      location: "Miami",
+      price: "From $382/night",
+      image: "/lovable-uploads/664a1cd1-383f-4aa5-89f5-81f4039482e8.png",
+      discount: "Special Offer",
+      rating: 4.3,
+      bookingLink: "https://booking.digitravels.io/url/d2f8a73e-e45e-4185-bc3e-7862109545e6?isPermanentLink=true"
     },
     {
       title: "Manhattan Penthouse",
