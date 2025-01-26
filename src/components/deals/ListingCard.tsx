@@ -45,11 +45,14 @@ const ListingCard = ({ listing, index }: ListingCardProps) => {
           <MapPin className="w-4 h-4 mr-1" />
           {listing.location}
         </p>
-        <div className="flex items-center justify-between">
-          <span className="text-lg font-semibold text-gray-900">
-            {listing.price}
-          </span>
-          <Button variant="outline">View Deal</Button>
+        <div className="flex flex-col items-center justify-between">
+          <div className="w-24 h-0.5 bg-red-500 mx-auto mb-2" />
+          <div className="w-full flex items-center justify-between">
+            <span className="text-lg font-semibold text-gray-900">
+              {listing.price}
+            </span>
+            <Button variant="outline">View Deal</Button>
+          </div>
         </div>
       </div>
     </motion.div>
