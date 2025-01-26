@@ -5,7 +5,11 @@ import { useToast } from "@/components/ui/use-toast";
 
 export const Subscription = () => {
   const { toast } = useToast();
+  // For testing purposes, we'll make isPromoValid always return true
+  // In production, you would want to use the actual date check
   const isPromoValid = () => true;
+  
+  const price = isPromoValid() ? 7 : 20; // Regular price is 84$/year (7$/month)
 
   const handleSubscribe = () => {
     toast({
@@ -45,12 +49,16 @@ export const Subscription = () => {
         >
           <div className="text-center mb-8">
             {isPromoValid() && (
-              <div>
-                <div className="w-32 h-0.5 bg-red-500 mx-auto mb-2" />
-                <div className="bg-red-100 text-red-700 px-4 py-2 rounded-lg mb-4 font-semibold">
-                  Digi Travels Special Launch Discount - 4.6$/month (Paid yearly 56$)
-                </div>
+              <div className="bg-red-100 text-red-700 px-4 py-2 rounded-lg mb-4 font-semibold">
+                Digi Travels Special Launch Discount - 4.6$/month (Paid yearly 56$)
               </div>
+            )}
+            <div className="flex items-center justify-center gap-2 mb-2">
+              <span className="text-5xl font-bold">${price}</span>
+              <span className="text-gray-600">/month</span>
+            </div>
+            {isPromoValid() && (
+              <div className="text-red-500 line-through font-medium mb-2">Regular yearly price 84$</div>
             )}
           </div>
 
