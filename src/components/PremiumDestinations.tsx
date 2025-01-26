@@ -50,19 +50,10 @@ export const PremiumDestinations = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-xl text-gray-600 mb-2"
+            className="text-xl text-gray-600"
           >
             Exclusive 30% discount on our most luxurious travel packages
           </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg font-semibold text-red-500"
-          >
-            Use promo code: DIGITRAVELS25
-          </motion.div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

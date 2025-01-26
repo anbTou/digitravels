@@ -35,9 +35,12 @@ export const Subscription = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Subscribe and Save
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-gray-600 mb-2">
             Get exclusive access to the best travel deals and pay no booking fees
           </p>
+          <div className="text-lg font-semibold text-red-500 mb-8">
+            Use promo code: DIGITRAVELS25
+          </div>
         </motion.div>
 
         <motion.div
