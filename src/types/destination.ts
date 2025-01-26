@@ -7,21 +7,12 @@ export interface Listing {
   rating: number;
 }
 
-export interface Section {
+export interface Destination {
   title: string;
   description: string;
   listings: Listing[];
 }
 
-export interface Continent {
-  title: string;
-  sections: {
-    beach: Section;
-    mountain: Section;
-    urban: Section;
-  };
-}
-
 export interface Categories {
-  [key: string]: Continent;
+  [key: string]: Destination;
 }

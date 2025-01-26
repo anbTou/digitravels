@@ -1,10 +1,16 @@
 import { motion } from "framer-motion";
-import { categories } from "@/constants/destinations";
+import { europe } from "@/constants/destinations/europe";
+import { usa } from "@/constants/destinations/usa";
+import { japan } from "@/constants/destinations/japan";
+import { africa } from "@/constants/destinations/africa";
+import { southAmerica } from "@/constants/destinations/southAmerica";
 import DealsHero from "@/components/deals/DealsHero";
 import DestinationSection from "@/components/deals/DestinationSection";
 import { Button } from "@/components/ui/button";
 
 const BestDeals = () => {
+  const destinations = [europe, usa, japan, africa, southAmerica];
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Black space above header */}
@@ -12,53 +18,38 @@ const BestDeals = () => {
       
       <DealsHero />
 
-      {/* Categories Section */}
+      {/* Destinations Section */}
       <section className="py-16 container mx-auto px-4">
-        {Object.entries(categories).map(([continentKey, continent], index) => (
-          <div key={continentKey}>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="mb-8"
-            >
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">{continent.title}</h2>
-            </motion.div>
-
-            {Object.entries(continent.sections).map(([sectionKey, section]) => (
-              <DestinationSection
-                key={sectionKey}
-                sectionKey={sectionKey}
-                section={section}
-              />
-            ))}
-
-            {/* Find Out More Deals button */}
-            <div className="mt-12 mb-16 text-center">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-              >
-                <a 
-                  href="http://booking.digitravels.io"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    variant="default"
-                    size="lg"
-                    className="bg-travel-600 hover:bg-travel-700"
-                  >
-                    Find Out More Deals
-                  </Button>
-                </a>
-              </motion.div>
-            </div>
-          </div>
+        {destinations.map((destination, index) => (
+          <DestinationSection
+            key={index}
+            destination={destination}
+          />
         ))}
+
+        {/* Find Out More Deals button */}
+        <div className="mt-12 mb-16 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <a 
+              href="http://booking.digitravels.io"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-travel-600 hover:bg-travel-700"
+              >
+                Find Out More Deals
+              </Button>
+            </a>
+          </motion.div>
+        </div>
       </section>
     </div>
   );
