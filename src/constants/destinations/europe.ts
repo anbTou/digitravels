@@ -13,12 +13,13 @@ export const europe: Destination = {
       rating: 4.5,
     },
     {
-      title: "Second Listing",
-      location: "Location 2",
-      price: "$150 per night",
-      image: "/path/to/image2.png",
-      discount: "15% off",
-      rating: 4.7,
+      title: "Hôtel de La Cigogne",
+      location: "Switzerland",
+      price: "From $714 per night",
+      image: "/lovable-uploads/0a8c58f9-7801-46cb-834f-e17d0111241f.png",
+      discount: "Special Rate",
+      rating: 4.6,
+      bookingLink: "https://booking.digitravels.io/url/53d7ab93-225d-4d56-b5c7-d414ae74bbca?isPermanentLink=true"
     },
     {
       title: "Citadines Apart'hotel Saint-Germain-des-Prés Paris",
