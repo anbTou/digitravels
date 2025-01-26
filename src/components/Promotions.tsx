@@ -36,7 +36,7 @@ export const Promotions = () => {
           >
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="/lovable-uploads/a29d1812-0c4d-4c32-812f-87a59ba65dc4.png"
+                src="/lovable-uploads/275fe9a9-4b15-4590-a867-fd7732f8b60a.png"
                 alt="Hotel Mousai Cancun 5*"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 loading="lazy"
@@ -141,6 +141,7 @@ export const Promotions = () => {
               </a>
             </div>
           </motion.div>
+
         </div>
         
         <div className="mt-12 text-center relative">
