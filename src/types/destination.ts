@@ -5,6 +5,7 @@ export interface Listing {
   image: string;
   discount: string;
   rating: number;
+  bookingLink?: string;
 }
 
 export interface Destination {

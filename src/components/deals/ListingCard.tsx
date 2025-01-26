@@ -51,7 +51,13 @@ const ListingCard = ({ listing, index }: ListingCardProps) => {
             <span className="text-lg font-semibold text-gray-900">
               {listing.price}
             </span>
-            <Button variant="outline">View Deal</Button>
+            <a 
+              href={listing.bookingLink || "http://booking.digitravels.io"} 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline">View Deal</Button>
+            </a>
           </div>
         </div>
       </div>
