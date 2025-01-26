@@ -10,11 +10,11 @@ const promotions = [
     discount: "40% off",
   },
   {
-    image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-    title: "Maldives Paradise",
-    location: "Maldives",
-    price: "From $399/night",
-    discount: "Early Bird 15% off",
+    image: "/lovable-uploads/3d131eea-78f6-4585-bd44-d8e9efd991e5.png",
+    title: "Hotel Mousai - All Inclusive",
+    location: "Mexico",
+    price: "From $690/night",
+    discount: "63% off",
   },
   {
     image: "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
