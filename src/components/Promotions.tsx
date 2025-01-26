@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const promotions = [
   {
-    image: "https://images.unsplash.com/photo-1501854140801-50d01698950b",
-    title: "Swiss Alps Retreat",
-    location: "Switzerland",
-    price: "From $299/night",
-    discount: "20% off",
+    image: "/lovable-uploads/ab69c16d-ba70-4c24-b4ba-fa9077f609f9.png",
+    title: "Hotel Mousai Cancun Ocean Front Adults Only 5*",
+    location: "Mexico",
+    price: "From $780/night",
+    discount: "40% off",
   },
   {
     image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
