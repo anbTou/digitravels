@@ -36,7 +36,7 @@ export const Promotions = () => {
           >
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="/lovable-uploads/ab69c16d-ba70-4c24-b4ba-fa9077f609f9.png"
+                src="/lovable-uploads/a29d1812-0c4d-4c32-812f-87a59ba65dc4.png"
                 alt="Hotel Mousai Cancun 5*"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 loading="lazy"
@@ -65,7 +65,6 @@ export const Promotions = () => {
             </div>
           </motion.div>
 
-          {/* Second Promotion */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -142,6 +141,7 @@ export const Promotions = () => {
               </a>
             </div>
           </motion.div>
+
         </div>
         
         <div className="mt-12 text-center relative">
