@@ -1,172 +1,45 @@
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
+import { PromotionCard } from "./promotions/PromotionCard";
+import { PromotionsHeader } from "./promotions/PromotionsHeader";
+import { ViewMoreButton } from "./promotions/ViewMoreButton";
+
+const promotionsData = [
+  {
+    image: "/lovable-uploads/275fe9a9-4b15-4590-a867-fd7732f8b60a.png",
+    discount: "40% off",
+    title: "Hotel Mousai Ocean Front",
+    location: "Mexico",
+    price: "From $780/night",
+    bookingUrl: "https://booking.digitravels.io/url/e8f52a7f-0814-4c79-bb86-66899518b897",
+  },
+  {
+    image: "/lovable-uploads/6305321c-f462-45b5-887e-ef0b91391ccd.png",
+    discount: "63% off",
+    title: "Hotel Mousai - All Inclusive",
+    location: "Mexico",
+    price: "From $680/night",
+    bookingUrl: "https://booking.digitravels.io/url/5301f54a-898b-4b00-8b04-acee89d7d8ab",
+  },
+  {
+    image: "/lovable-uploads/816bcbbb-2dd0-4f9d-bda1-57d8ed69db6e.png",
+    discount: "55% off",
+    title: "SLS Cancun",
+    location: "Mexico",
+    price: "From $225/night",
+    bookingUrl: "https://booking.digitravels.io/url/5292643b-0957-4878-9842-98fc9d635488",
+  },
+];
 
 export const Promotions = () => {
   return (
     <section className="py-12 bg-white">
       <div className="container">
-        <div className="text-center mb-16">
-          <motion.span
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-sm font-medium text-travel-600"
-          >
-            Limited Time Offers
-          </motion.span>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-4xl font-bold text-travel-900 mt-2"
-          >
-            Current Promotions
-          </motion.h2>
-        </div>
-
+        <PromotionsHeader />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* First Promotion */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="group relative overflow-hidden rounded-2xl"
-          >
-            <div className="aspect-[4/3] overflow-hidden">
-              <img
-                src="/lovable-uploads/275fe9a9-4b15-4590-a867-fd7732f8b60a.png"
-                alt="Hotel Mousai Ocean Front"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-sm mb-3">
-                40% off
-              </span>
-              <h3 className="text-xl font-bold mb-1">Hotel Mousai Ocean Front</h3>
-              <p className="text-white/90 mb-4">Mexico</p>
-              <p className="text-xl font-semibold mb-4">From $780/night</p>
-              <a 
-                href="https://booking.digitravels.io/url/e8f52a7f-0814-4c79-bb86-66899518b897"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  variant="outline"
-                  className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 text-white w-full"
-                >
-                  View more
-                </Button>
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Second Promotion */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="group relative overflow-hidden rounded-2xl"
-          >
-            <div className="aspect-[4/3] overflow-hidden">
-              <img
-                src="/lovable-uploads/6305321c-f462-45b5-887e-ef0b91391ccd.png"
-                alt="Hotel Mousai - All Inclusive"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-sm mb-3">
-                63% off
-              </span>
-              <h3 className="text-xl font-bold mb-1">Hotel Mousai - All Inclusive</h3>
-              <p className="text-white/90 mb-4">Mexico</p>
-              <p className="text-xl font-semibold mb-4">From $680/night</p>
-              <a 
-                href="https://booking.digitravels.io/url/5301f54a-898b-4b00-8b04-acee89d7d8ab"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  variant="outline"
-                  className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 text-white w-full"
-                >
-                  View more
-                </Button>
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Third Promotion */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="group relative overflow-hidden rounded-2xl"
-          >
-            <div className="aspect-[4/3] overflow-hidden">
-              <img
-                src="/lovable-uploads/816bcbbb-2dd0-4f9d-bda1-57d8ed69db6e.png"
-                alt="SLS Cancun"
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                loading="lazy"
-              />
-            </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-              <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-sm mb-3">
-                55% off
-              </span>
-              <h3 className="text-xl font-bold mb-1">SLS Cancun</h3>
-              <p className="text-white/90 mb-4">Mexico</p>
-              <p className="text-xl font-semibold mb-4">From $225/night</p>
-              <a 
-                href="https://booking.digitravels.io/url/5292643b-0957-4878-9842-98fc9d635488"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  variant="outline"
-                  className="bg-white/10 backdrop-blur-md border-white/20 hover:bg-white/20 text-white w-full"
-                >
-                  View more
-                </Button>
-              </a>
-            </div>
-          </motion.div>
+          {promotionsData.map((promotion, index) => (
+            <PromotionCard key={index} index={index} {...promotion} />
+          ))}
         </div>
-        
-        <div className="mt-12 text-center relative">
-          <div className="absolute inset-x-0 -bottom-8 h-16 bg-gradient-to-b from-transparent to-gray-100"></div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <a 
-              href="https://visitsagres.booking.xeni.com/url/2267dbb2-5ceb-4ab0-a21b-0fb4d5595a56"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button
-                variant="default"
-                size="lg"
-                className="bg-travel-600 hover:bg-travel-700 relative z-10"
-              >
-                View more
-              </Button>
-            </a>
-          </motion.div>
-        </div>
+        <ViewMoreButton />
       </div>
     </section>
   );
