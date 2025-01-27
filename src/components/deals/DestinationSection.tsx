@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Destination } from "@/types/destination";
 import ListingCard from "./ListingCard";
+import { Button } from "@/components/ui/button";
 
 interface DestinationSectionProps {
   destination: Destination;
@@ -25,6 +26,28 @@ const DestinationSection = ({ destination }: DestinationSectionProps) => {
           <ListingCard key={index} listing={listing} index={index} />
         ))}
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="mt-8 text-center"
+      >
+        <a 
+          href="http://booking.digitravels.io"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button
+            variant="outline"
+            size="lg"
+            className="bg-white hover:bg-gray-50 border-gray-200"
+          >
+            Find Out More Deals
+          </Button>
+        </a>
+      </motion.div>
     </div>
   );
 };
