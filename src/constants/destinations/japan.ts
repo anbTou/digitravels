@@ -26,7 +26,7 @@ export const japan: Destination = {
       title: "Hotel Nikko Alivila",
       location: "Gima Yomitan Son, Yomitan",
       price: "From $157/night",
-      image: "https://images.unsplash.com/photo-1542640244-7e672d6cef4e",
+      image: "/lovable-uploads/cf4b8c9a-0e9b-4e43-98ed-5741c6dd96d8.png",
       discount: "20% OFF",
       rating: 4.6,
       bookingLink: "https://booking.digitravels.io/url/a4632476-3196-48e8-ab7f-9f70088a9b68?isPermanentLink=true"
