@@ -18,7 +18,7 @@ export const europe: Destination = {
       location: "Switzerland",
       price: "From $714/night",
       image: "/lovable-uploads/0a8c58f9-7801-46cb-834f-e17d0111241f.png",
-      discount: "Save Up To 200$",
+      discount: "Save Up To 150$",
       rating: 4.6,
       bookingLink: "https://booking.digitravels.io/url/53d7ab93-225d-4d56-b5c7-d414ae74bbca?isPermanentLink=true"
     },
@@ -27,7 +27,7 @@ export const europe: Destination = {
       location: "Paris, France",
       price: "From $129/night",
       image: "/lovable-uploads/dca424af-cb60-4eb9-9231-2af626d166d2.png",
-      discount: "Save Up To 200$",
+      discount: "Save Up To 95$",
       rating: 4.3,
       bookingLink: "https://booking.digitravels.io/url/b492046d-094e-4821-a556-9dc742191b37?isPermanentLink=true"
     }
