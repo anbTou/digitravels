@@ -45,6 +45,10 @@ export const PricingCard = () => {
 
       <FeaturesList />
 
+      <p className="text-center text-gray-700 mb-4">
+        Want to start saving? Click below to subscribe now and unlock the best travel deals today!
+      </p>
+
       <Button 
         onClick={handleSubscribe}
         className="w-full bg-primary hover:bg-primary/90"
