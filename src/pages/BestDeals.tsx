@@ -28,15 +28,15 @@ const BestDeals = () => {
         ))}
 
         {/* Subscription CTA */}
-        <div className="mt-12 mb-16 text-center bg-white rounded-lg shadow-lg p-8">
+        <div className="mt-12 mb-16 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="max-w-2xl mx-auto"
+            className="max-w-2xl mx-auto bg-gradient-to-r from-travel-50 to-white rounded-lg p-10 shadow-xl shadow-travel-200/20 border border-travel-100"
           >
-            <p className="text-gray-700 mb-6">
+            <p className="text-gray-700 mb-6 leading-relaxed">
               Every stay you see here comes with an exclusive Digi Travels discount. Want even more savings? Subscribe now to remove booking fees and unlock the best deals!
             </p>
             <a 
@@ -45,7 +45,7 @@ const BestDeals = () => {
               <Button
                 variant="default"
                 size="lg"
-                className="bg-travel-600 hover:bg-travel-700"
+                className="bg-travel-600 hover:bg-travel-700 transform transition-all duration-200 hover:scale-105"
               >
                 Subscribe Now
               </Button>
