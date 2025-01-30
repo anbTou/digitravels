@@ -8,7 +8,7 @@ export const southAmerica: Destination = {
     {
       title: "JW Marriott Hotel",
       location: "Rio de Janeiro, Brazil",
-      price: "From €210.69/night",
+      price: "From $210.69/night",
       image: "/lovable-uploads/953ccb41-9f8e-4e58-887d-174fa851a715.png",
       discount: "Save Up To 225$",
       rating: 4.3,
@@ -17,7 +17,7 @@ export const southAmerica: Destination = {
     {
       title: "Tango de Mayo Hotel",
       location: "Buenos Aires, Argentina",
-      price: "From €88.05/night",
+      price: "From $88.05/night",
       image: "/lovable-uploads/9b0e5b04-2497-4019-9d3f-c3e4928ee004.png",
       discount: "Save Up To 45$",
       rating: 4.5,
@@ -26,7 +26,7 @@ export const southAmerica: Destination = {
     {
       title: "The Westin Lima Hotel",
       location: "Lima, Peru",
-      price: "From €571.32/night",
+      price: "From $571.32/night",
       image: "/lovable-uploads/dcd56b7a-5569-40cf-81e6-f36a07679f4c.png",
       discount: "Save Up To 280$",
       rating: 4.8,
