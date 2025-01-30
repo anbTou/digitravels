@@ -5,6 +5,15 @@ export const southAmerica: Destination = {
   description: "Experience luxury in vibrant South American destinations",
   listings: [
     {
+      title: "JW Marriott Hotel",
+      location: "Rio de Janeiro, Brazil",
+      price: "From €210.69/night",
+      image: "/lovable-uploads/953ccb41-9f8e-4e58-887d-174fa851a715.png",
+      discount: "save up to 60$/night",
+      rating: 4.3,
+      bookingLink: "https://booking.digitravels.io/url/bcc1a823-4f1f-4540-be5d-34f22141a1ef?isPermanentLink=true"
+    },
+    {
       title: "Copacabana Beachfront",
       location: "Brazil",
       price: "From €199/night",
