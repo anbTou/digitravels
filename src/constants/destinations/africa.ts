@@ -14,12 +14,13 @@ export const africa: Destination = {
       bookingLink: "https://booking.digitravels.io/url/eb01dfd6-cf84-4458-b090-f12c60f4c835?isPermanentLink=true"
     },
     {
-      title: "Atlas Mountains Lodge",
-      location: "Morocco",
-      price: "From €159/night",
-      image: "https://images.unsplash.com/photo-1489392191049-fc10c97e64b6",
-      discount: "25% OFF",
-      rating: 4.7,
+      title: "Sunshine Marine Lodge",
+      location: "Tanzania",
+      price: "From €120,83/night",
+      image: "/lovable-uploads/dcd56b7a-5569-40cf-81e6-f36a07679f4c.png",
+      discount: "save up to 60$/night",
+      rating: 5,
+      bookingLink: "https://booking.digitravels.io/url/4f7ea834-f5c8-41d4-95c2-e248729d4a71?isPermanentLink=true"
     },
     {
       title: "Cape Town Penthouse",
