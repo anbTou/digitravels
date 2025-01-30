@@ -23,12 +23,13 @@ export const africa: Destination = {
       bookingLink: "https://booking.digitravels.io/url/4f7ea834-f5c8-41d4-95c2-e248729d4a71?isPermanentLink=true"
     },
     {
-      title: "Cape Town Penthouse",
-      location: "South Africa",
-      price: "From €179/night",
-      image: "https://images.unsplash.com/photo-1577948000111-9c970dfe3743",
-      discount: "20% OFF",
+      title: "Labotessa Luxury Boutique Hotel",
+      location: "Cape Town, South Africa",
+      price: "From €1,386.77/night",
+      image: "/lovable-uploads/38be9397-da0f-40df-b44a-a97586616e25.png",
+      discount: "save up to 60$/night",
       rating: 4.9,
+      bookingLink: "https://booking.digitravels.io/url/45d60008-7d61-4473-a2c0-13f44399cb2b?isPermanentLink=true"
     },
   ],
 };
