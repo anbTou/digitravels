@@ -28,7 +28,7 @@ const BestDeals = () => {
         ))}
 
         {/* Subscription CTA */}
-        <div className="mt-12 mb-16 text-center">
+        <div className="mt-12 mb-16 text-center bg-white rounded-lg shadow-lg p-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
