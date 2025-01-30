@@ -8,7 +8,7 @@ export const africa: Destination = {
     {
       title: "SeVi Boutique Hotel",
       location: "Tanzania",
-      price: "From €222,87/night",
+      price: "From $222.87/night",
       image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f",
       discount: "Save Up To 175$",
       rating: 4.4,
@@ -17,7 +17,7 @@ export const africa: Destination = {
     {
       title: "Sunshine Marine Lodge",
       location: "Tanzania",
-      price: "From €120,83/night",
+      price: "From $120.83/night",
       image: "/lovable-uploads/dcd56b7a-5569-40cf-81e6-f36a07679f4c.png",
       discount: "Save Up To 125$",
       rating: 5,
@@ -26,7 +26,7 @@ export const africa: Destination = {
     {
       title: "Labotessa Luxury Boutique Hotel",
       location: "Cape Town, South Africa",
-      price: "From €1,386.77/night",
+      price: "From $1,386/night",
       image: "/lovable-uploads/38be9397-da0f-40df-b44a-a97586616e25.png",
       discount: "Save Up To 350$",
       rating: 4.9,
