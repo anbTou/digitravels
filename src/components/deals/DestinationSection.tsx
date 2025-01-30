@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Destination } from "@/types/destination";
 import ListingCard from "./ListingCard";
 import { Button } from "@/components/ui/button";
+import { Info } from "lucide-react";
 
 interface DestinationSectionProps {
   destination: Destination;
@@ -26,6 +27,19 @@ const DestinationSection = ({ destination }: DestinationSectionProps) => {
           <ListingCard key={index} listing={listing} index={index} />
         ))}
       </div>
+
+      {destination.note && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mt-6 flex items-start gap-2 bg-travel-50/50 p-4 rounded-lg border border-travel-100"
+        >
+          <Info className="w-5 h-5 text-travel-600 mt-0.5 flex-shrink-0" />
+          <p className="text-sm text-travel-600">{destination.note}</p>
+        </motion.div>
+      )}
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}

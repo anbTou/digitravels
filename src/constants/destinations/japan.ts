@@ -3,6 +3,7 @@ import { Destination } from "@/types/destination";
 export const japan: Destination = {
   title: "Japan",
   description: "Experience the perfect blend of tradition and luxury",
+  note: "Discounts vary depending on the season and the length of stay. A reservation during peak season for 7 nights will have a higher monetary discount compared to a 2-night stay during low season.",
   listings: [
     {
       title: "Gold Stay Nagoya Osu",

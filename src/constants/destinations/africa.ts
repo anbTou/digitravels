@@ -3,6 +3,7 @@ import { Destination } from "@/types/destination";
 export const africa: Destination = {
   title: "Africa",
   description: "Discover luxury amid breathtaking landscapes",
+  note: "Discounts vary depending on the season and the length of stay. A reservation during peak season for 7 nights will have a higher monetary discount compared to a 2-night stay during low season.",
   listings: [
     {
       title: "SeVi Boutique Hotel",

@@ -12,6 +12,7 @@ export interface Destination {
   title: string;
   description: string;
   listings: Listing[];
+  note?: string;
 }
 
 export interface Categories {

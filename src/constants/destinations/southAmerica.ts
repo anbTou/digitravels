@@ -3,6 +3,7 @@ import { Destination } from "@/types/destination";
 export const southAmerica: Destination = {
   title: "South America",
   description: "Experience luxury in vibrant South American destinations",
+  note: "Discounts vary depending on the season and the length of stay. A reservation during peak season for 7 nights will have a higher monetary discount compared to a 2-night stay during low season.",
   listings: [
     {
       title: "JW Marriott Hotel",
