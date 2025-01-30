@@ -15,7 +15,7 @@ export const SubscriptionHeader = () => {
         <span className="text-sm font-medium">Premium Subscription</span>
       </div>
       <h2 className="text-4xl font-bold text-gray-900 mb-4">
-        One Pack, All the Perks—Stress-Free Travel Starts Here
+        One Pack, All the Perks
       </h2>
       <p className="text-xl text-gray-600 mb-2">
         Forget complicated bundles that don't deliver. With Digi Travels, you pay $84/year and save up to $500 in exclusive deals. Enjoy:
