@@ -23,12 +23,13 @@ export const southAmerica: Destination = {
       bookingLink: "https://booking.digitravels.io/url/1ce3fc08-d09c-4569-aa8a-abb1dbfee167?isPermanentLink=true"
     },
     {
-      title: "Andes Luxury Lodge",
-      location: "Peru",
-      price: "From €229/night",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
-      discount: "30% OFF",
-      rating: 4.9,
+      title: "The Westin Lima Hotel",
+      location: "Lima, Peru",
+      price: "From €571.32/night",
+      image: "/lovable-uploads/dcd56b7a-5569-40cf-81e6-f36a07679f4c.png",
+      discount: "save up to 60$/night",
+      rating: 4.8,
+      bookingLink: "https://booking.digitravels.io/url/05a90ccf-296c-468a-98f0-2894fcea9af5?isPermanentLink=true"
     },
     {
       title: "Buenos Aires Loft",
