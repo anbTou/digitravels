@@ -5,12 +5,13 @@ export const africa: Destination = {
   description: "Discover luxury amid breathtaking landscapes",
   listings: [
     {
-      title: "Zanzibar Resort",
+      title: "SeVi Boutique Hotel",
       location: "Tanzania",
-      price: "From €199/night",
+      price: "From €222,87/night",
       image: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f",
-      discount: "30% OFF",
-      rating: 4.8,
+      discount: "save up to 60$/night",
+      rating: 4.4,
+      bookingLink: "https://booking.digitravels.io/url/eb01dfd6-cf84-4458-b090-f12c60f4c835?isPermanentLink=true"
     },
     {
       title: "Atlas Mountains Lodge",
