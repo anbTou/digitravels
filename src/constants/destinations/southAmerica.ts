@@ -14,12 +14,13 @@ export const southAmerica: Destination = {
       bookingLink: "https://booking.digitravels.io/url/bcc1a823-4f1f-4540-be5d-34f22141a1ef?isPermanentLink=true"
     },
     {
-      title: "Copacabana Beachfront",
-      location: "Brazil",
-      price: "From €199/night",
-      image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      discount: "25% OFF",
-      rating: 4.8,
+      title: "Tango de Mayo Hotel",
+      location: "Buenos Aires, Argentina",
+      price: "From €88.05/night",
+      image: "/lovable-uploads/9b0e5b04-2497-4019-9d3f-c3e4928ee004.png",
+      discount: "save up to 60$/night",
+      rating: 4.5,
+      bookingLink: "https://booking.digitravels.io/url/1ce3fc08-d09c-4569-aa8a-abb1dbfee167?isPermanentLink=true"
     },
     {
       title: "Andes Luxury Lodge",
