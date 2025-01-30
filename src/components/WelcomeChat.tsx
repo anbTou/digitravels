@@ -47,14 +47,17 @@ export function WelcomeChat() {
             <MessageCircle className="h-6 w-6" />
           </button>
         </SheetTrigger>
-        <SheetContent side="right" className="w-[400px] sm:max-w-[400px] p-6">
+        <SheetContent 
+          side="right" 
+          className="w-[90%] sm:w-[400px] md:max-w-[400px] p-6 !right-0 !left-auto !bottom-0 !top-auto !rounded-t-lg sm:!rounded-lg sm:!top-0 sm:!bottom-auto h-[80vh] sm:h-screen transition-all duration-300 ease-in-out"
+        >
           <SheetHeader className="mb-4">
             <SheetTitle className="text-xl font-semibold text-center text-travel-800">
               Welcome to Digi Travels!
             </SheetTitle>
           </SheetHeader>
           <div className="flex flex-col h-[calc(100vh-200px)]">
-            <div className="flex-grow mb-4">
+            <div className="flex-grow mb-4 overflow-y-auto">
               <ChatContent showThankYou={showThankYou} />
             </div>
             {!showThankYou && (
