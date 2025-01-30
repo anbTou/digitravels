@@ -30,14 +30,6 @@ export const southAmerica: Destination = {
       discount: "save up to 60$/night",
       rating: 4.8,
       bookingLink: "https://booking.digitravels.io/url/05a90ccf-296c-468a-98f0-2894fcea9af5?isPermanentLink=true"
-    },
-    {
-      title: "Buenos Aires Loft",
-      location: "Argentina",
-      price: "From €149/night",
-      image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151",
-      discount: "20% OFF",
-      rating: 4.7,
-    },
+    }
   ],
 };
