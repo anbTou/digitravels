@@ -5,7 +5,6 @@ export const FeaturesList = () => {
     "14 days trial",
     "No booking fees",
     "Exclusive hotel rates",
-    "Premium customer support",
     "Cancel anytime",
   ];
 
