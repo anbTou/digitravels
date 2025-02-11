@@ -1,3 +1,4 @@
+
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { DigiTravelLogo } from "@/components/DigiTravelLogo";
 import {
@@ -56,6 +57,17 @@ export const Header = () => {
                     active={location.pathname === "/best-deals"}
                   >
                     Best Deals
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+              
+              <NavigationMenuItem>
+                <Link to="/about">
+                  <NavigationMenuLink 
+                    className={navigationMenuTriggerStyle()}
+                    active={location.pathname === "/about"}
+                  >
+                    About Us
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
