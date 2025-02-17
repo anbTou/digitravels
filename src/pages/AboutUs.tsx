@@ -86,18 +86,19 @@ While we focus primarily on hotels and resorts, our platform also includes apart
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4 text-travel-700">Vision</h3>
-            <p className="text-travel-600">
-              To become the world's most trusted travel companion, making remarkable journeys 
-              accessible to everyone through innovative technology and exceptional service.
-            </p>
+            <p className="text-travel-600">We are not here to compete with major OTAs in terms of technology. Instead, our vision is to offer a product that prioritizes simplicity and affordability.
+
+In the long run, we plan to expand our platform to include flights, providing travelers with even more ways to book their trips at lower costs.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4 text-travel-700">Values</h3>
             <ul className="space-y-3 text-travel-600">
-              <li>• Customer-First Approach</li>
+              <li>Transparency | Accessibility | Simplicity.</li>
               <li>• Transparency in Everything</li>
-              <li>• Continuous Innovation</li>
-              <li>• Sustainable Travel</li>
+              <li>
+            </li>
+              <li>
+            </li>
             </ul>
           </div>
         </div>
