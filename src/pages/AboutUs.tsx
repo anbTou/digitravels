@@ -1,16 +1,16 @@
-
 import { motion } from "framer-motion";
-
 export default function AboutUs() {
-  return (
-    <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+  return <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
       {/* Hero Section */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="max-w-7xl mx-auto text-center mb-16"
-      >
+      <motion.div initial={{
+      opacity: 0,
+      y: 20
+    }} animate={{
+      opacity: 1,
+      y: 0
+    }} transition={{
+      duration: 0.5
+    }} className="max-w-7xl mx-auto text-center mb-16">
         <h1 className="text-4xl sm:text-5xl font-bold text-travel-900 mb-6">
           Your Journey Begins With Us
         </h1>
@@ -20,13 +20,16 @@ export default function AboutUs() {
       </motion.div>
 
       {/* How We Work Section */}
-      <motion.section 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="max-w-7xl mx-auto mb-20"
-      >
+      <motion.section initial={{
+      opacity: 0
+    }} whileInView={{
+      opacity: 1
+    }} viewport={{
+      once: true
+    }} transition={{
+      duration: 0.5,
+      delay: 0.2
+    }} className="max-w-7xl mx-auto mb-20">
         <h2 className="text-3xl font-bold text-travel-800 mb-8 text-center">How We Work</h2>
         <div className="grid md:grid-cols-3 gap-8 px-4">
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -48,33 +51,37 @@ export default function AboutUs() {
       </motion.section>
 
       {/* Why We Started Section */}
-      <motion.section 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        className="max-w-7xl mx-auto mb-20 px-4"
-      >
+      <motion.section initial={{
+      opacity: 0
+    }} whileInView={{
+      opacity: 1
+    }} viewport={{
+      once: true
+    }} transition={{
+      duration: 0.5,
+      delay: 0.3
+    }} className="max-w-7xl mx-auto mb-20 px-4">
         <h2 className="text-3xl font-bold text-travel-800 mb-8 text-center">Why We Started</h2>
         <div className="bg-travel-50 p-8 rounded-lg">
-          <p className="text-lg text-travel-600 leading-relaxed max-w-4xl mx-auto text-center">
-            Born from a passion for travel and a frustration with complicated booking processes, 
-            Digi Travels was founded to make travel planning simple and enjoyable. We believe that 
-            exploring the world shouldn't be hindered by complex booking systems or hidden fees. 
-            Our founders combined their expertise in technology and travel to create a platform 
-            that puts the joy back into travel planning.
-          </p>
+          <p className="text-lg text-travel-600 leading-relaxed max-w-4xl mx-auto text-center">Travel platforms often charge high commissions and prioritize listings based on paid agreements rather than customer needs. This lack of transparency leads to higher costs for travelers, as they indirectly fund complex, profit-driven systems.
+
+We believe travel should be simple and affordable. That’s why we created a booking platform that eliminates unnecessary fees while maintaining a seamless experience. Our goal is to provide a straightforward and cost-effective way to search for and book accommodations without the burden of hidden costs.
+
+While we focus primarily on hotels and resorts, our platform also includes apartments, hostels, guesthouses, and villas, ensuring travelers have a wide range of options to choose from.</p>
         </div>
       </motion.section>
 
       {/* Our Mission Section */}
-      <motion.section 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className="max-w-7xl mx-auto px-4"
-      >
+      <motion.section initial={{
+      opacity: 0
+    }} whileInView={{
+      opacity: 1
+    }} viewport={{
+      once: true
+    }} transition={{
+      duration: 0.5,
+      delay: 0.4
+    }} className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-travel-800 mb-8 text-center">Our Mission</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -95,6 +102,5 @@ export default function AboutUs() {
           </div>
         </div>
       </motion.section>
-    </div>
-  );
+    </div>;
 }
