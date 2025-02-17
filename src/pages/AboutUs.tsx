@@ -63,7 +63,7 @@ export default function AboutUs() {
     }} className="max-w-7xl mx-auto mb-20 px-4">
         <h2 className="text-3xl font-bold text-travel-800 mb-8 text-center">Why We Started</h2>
         <div className="bg-travel-50 p-8 rounded-lg">
-          <p className="text-lg text-travel-600 leading-relaxed max-w-4xl mx-auto text-center">Travel platforms often charge high commissions and prioritize listings based on paid agreements rather than customer needs. This lack of transparency leads to higher costs for travelers, as they indirectly fund complex, profit-driven systems.
+          <p className="text-travel-600 leading-relaxed max-w-4xl mx-auto text-center text-lg font-normal">Travel platforms often charge high commissions and prioritize listings based on paid agreements rather than customer needs. This lack of transparency leads to higher costs for travelers, as they indirectly fund complex, profit-driven systems.
 
 We believe travel should be simple and affordable. That’s why we created a booking platform that eliminates unnecessary fees while maintaining a seamless experience. Our goal is to provide a straightforward and cost-effective way to search for and book accommodations without the burden of hidden costs.
 
