@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 export default function AboutUs() {
   return <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
@@ -14,7 +15,7 @@ export default function AboutUs() {
         <h1 className="text-4xl sm:text-5xl font-bold text-travel-900 mb-6">
           Your Journey Begins With Us
         </h1>
-        <p className="text-xl text-travel-600 max-w-3xl mx-auto">
+        <p className="text-xl text-travel-600 max-w-3xl mx-auto text-justify">
           We're revolutionizing the way people explore the world, one journey at a time.
         </p>
       </motion.div>
@@ -35,17 +36,17 @@ export default function AboutUs() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="text-travel-600 mb-4 text-4xl font-bold">01</div>
             <h3 className="text-xl font-semibold mb-4">Smart Search</h3>
-            <p className="text-travel-600">We analyze millions of flight and hotel options to find the best deals for you.</p>
+            <p className="text-travel-600 text-justify">We analyze millions of flight and hotel options to find the best deals for you.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="text-travel-600 mb-4 text-4xl font-bold">02</div>
             <h3 className="text-xl font-semibold mb-4">Personalized Options</h3>
-            <p className="text-travel-600">Get tailored travel recommendations based on your preferences and past trips.</p>
+            <p className="text-travel-600 text-justify">Get tailored travel recommendations based on your preferences and past trips.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="text-travel-600 mb-4 text-4xl font-bold">03</div>
             <h3 className="text-xl font-semibold mb-4">Seamless Booking</h3>
-            <p className="text-travel-600">Book your entire trip in minutes with our easy-to-use platform.</p>
+            <p className="text-travel-600 text-justify">Book your entire trip in minutes with our easy-to-use platform.</p>
           </div>
         </div>
       </motion.section>
@@ -63,9 +64,9 @@ export default function AboutUs() {
     }} className="max-w-7xl mx-auto mb-20 px-4">
         <h2 className="text-3xl font-bold text-travel-800 mb-8 text-center">Why We Started</h2>
         <div className="bg-travel-50 p-8 rounded-lg">
-          <p className="text-travel-600 leading-relaxed max-w-4xl mx-auto text-center text-lg font-normal">Travel platforms often charge high commissions and prioritize listings based on paid agreements rather than customer needs. This lack of transparency leads to higher costs for travelers, as they indirectly fund complex, profit-driven systems.
+          <p className="text-travel-600 leading-relaxed max-w-4xl mx-auto text-justify text-lg font-normal">Travel platforms often charge high commissions and prioritize listings based on paid agreements rather than customer needs. This lack of transparency leads to higher costs for travelers, as they indirectly fund complex, profit-driven systems.
 
-We believe travel should be simple and affordable. That’s why we created a booking platform that eliminates unnecessary fees while maintaining a seamless experience. Our goal is to provide a straightforward and cost-effective way to search for and book accommodations without the burden of hidden costs.
+We believe travel should be simple and affordable. That's why we created a booking platform that eliminates unnecessary fees while maintaining a seamless experience. Our goal is to provide a straightforward and cost-effective way to search for and book accommodations without the burden of hidden costs.
 
 While we focus primarily on hotels and resorts, our platform also includes apartments, hostels, guesthouses, and villas, ensuring travelers have a wide range of options to choose from.</p>
         </div>
@@ -86,7 +87,7 @@ While we focus primarily on hotels and resorts, our platform also includes apart
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4 text-travel-700">Vision</h3>
-            <p className="text-travel-600">We are not here to compete with major OTAs in terms of technology. Instead, our vision is to offer a product that prioritizes simplicity and affordability.
+            <p className="text-travel-600 text-justify">We are not here to compete with major OTAs in terms of technology. Instead, our vision is to offer a product that prioritizes simplicity and affordability.
 
 In the long run, we plan to expand our platform to include flights, providing travelers with even more ways to book their trips at lower costs.</p>
           </div>
