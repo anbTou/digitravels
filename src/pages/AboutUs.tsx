@@ -64,11 +64,17 @@ export default function AboutUs() {
     }} className="max-w-7xl mx-auto mb-20 px-4">
         <h2 className="text-3xl font-bold text-travel-800 mb-8 text-center">Why We Started</h2>
         <div className="bg-travel-50 p-8 rounded-lg">
-          <p className="text-travel-600 leading-relaxed max-w-4xl mx-auto text-justify text-lg font-normal">Travel platforms often charge high commissions and prioritize listings based on paid agreements rather than customer needs. This lack of transparency leads to higher costs for travelers, as they indirectly fund complex, profit-driven systems.
-
-We believe travel should be simple and affordable. That's why we created a booking platform that eliminates unnecessary fees while maintaining a seamless experience. Our goal is to provide a straightforward and cost-effective way to search for and book accommodations without the burden of hidden costs.
-
-While we focus primarily on hotels and resorts, our platform also includes apartments, hostels, guesthouses, and villas, ensuring travelers have a wide range of options to choose from.</p>
+          <div className="text-travel-600 leading-relaxed max-w-4xl mx-auto space-y-6">
+            <p className="text-lg font-normal text-justify">
+              Travel platforms often charge high commissions and prioritize listings based on paid agreements rather than customer needs. This lack of transparency leads to higher costs for travelers, as they indirectly fund complex, profit-driven systems.
+            </p>
+            <p className="text-lg font-normal text-justify">
+              We believe travel should be simple and affordable. That's why we created a booking platform that eliminates unnecessary fees while maintaining a seamless experience. Our goal is to provide a straightforward and cost-effective way to search for and book accommodations without the burden of hidden costs.
+            </p>
+            <p className="text-lg font-normal text-justify">
+              While we focus primarily on hotels and resorts, our platform also includes apartments, hostels, guesthouses, and villas, ensuring travelers have a wide range of options to choose from.
+            </p>
+          </div>
         </div>
       </motion.section>
 
@@ -87,19 +93,22 @@ While we focus primarily on hotels and resorts, our platform also includes apart
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4 text-travel-700">Vision</h3>
-            <p className="text-travel-600 text-justify">We are not here to compete with major OTAs in terms of technology. Instead, our vision is to offer a product that prioritizes simplicity and affordability.
-
-In the long run, we plan to expand our platform to include flights, providing travelers with even more ways to book their trips at lower costs.</p>
+            <div className="space-y-4">
+              <p className="text-travel-600 text-justify">
+                We are not here to compete with major OTAs in terms of technology. Instead, our vision is to offer a product that prioritizes simplicity and affordability.
+              </p>
+              <p className="text-travel-600 text-justify">
+                In the long run, we plan to expand our platform to include flights, providing travelers with even more ways to book their trips at lower costs.
+              </p>
+            </div>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4 text-travel-700">Values</h3>
             <ul className="space-y-3 text-travel-600">
               <li>Transparency | Accessibility | Simplicity.</li>
               <li>• Transparency in Everything</li>
-              <li>
-            </li>
-              <li>
-            </li>
+              <li></li>
+              <li></li>
             </ul>
           </div>
         </div>
