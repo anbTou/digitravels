@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 export default function AboutUs() {
   return <div className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
@@ -102,7 +101,7 @@ export default function AboutUs() {
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4 text-travel-700">Vision</h3>
+            <h3 className="text-xl font-semibold mb-4 text-travel-700 text-center">Vision</h3>
             <div className="space-y-4">
               <p className="text-travel-600 text-justify">
                 We are not here to compete with major OTAs in terms of technology. Instead, our vision is to offer a product that prioritizes simplicity and affordability.
@@ -113,7 +112,7 @@ export default function AboutUs() {
             </div>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4 text-travel-700">Values</h3>
+            <h3 className="text-xl font-semibold mb-4 text-travel-700 text-center">Values</h3>
             <div className="space-y-4">
               <p className="text-travel-600 text-xl font-semibold text-center mb-4">
                 Transparency. Accessibility. Simplicity.
