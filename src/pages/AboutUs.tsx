@@ -90,6 +90,16 @@ export default function AboutUs() {
       delay: 0.4
     }} className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-travel-800 mb-8 text-center">Our Mission</h2>
+        <div className="bg-travel-50 p-8 rounded-lg mb-8">
+          <div className="text-travel-600 leading-relaxed max-w-4xl mx-auto space-y-6">
+            <p className="text-lg font-normal text-justify">
+              Our mission is to democratize travel by making bookings more accessible and cost-efficient. We aim to provide travelers with an extensive portfolio of accommodations at the lowest possible cost, without the hidden fees that make traditional booking platforms expensive.
+            </p>
+            <p className="text-lg font-normal text-justify">
+              By removing unnecessary complexities, we ensure that our users can focus on what truly matters—finding the right place to stay at the best price.
+            </p>
+          </div>
+        </div>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4 text-travel-700">Vision</h3>
