@@ -114,12 +114,14 @@ export default function AboutUs() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4 text-travel-700">Values</h3>
-            <ul className="space-y-3 text-travel-600">
-              <li>Transparency | Accessibility | Simplicity.</li>
-              <li>• Transparency in Everything</li>
-              <li></li>
-              <li></li>
-            </ul>
+            <div className="space-y-4">
+              <p className="text-travel-600 text-justify">
+                We believe in a travel booking experience that is fair, easy to use, and cost-effective. Our diverse portfolio spans the globe, connecting travelers with the accommodations they need—without hidden costs or unnecessary fees.
+              </p>
+              <p className="text-travel-600 text-justify">
+                While we act as the intermediary, the ultimate experience is delivered by the hotels themselves. Our role is to ensure smooth, reliable connections between travelers and hotels, making every stay as seamless as possible.
+              </p>
+            </div>
           </div>
         </div>
       </motion.section>
