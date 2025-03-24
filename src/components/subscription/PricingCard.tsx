@@ -26,11 +26,11 @@ export const PricingCard = () => {
     >
       <div className="text-center mb-8">
         <div className="flex items-center justify-center gap-2 mb-2">
-          <span className="text-5xl font-bold">$7</span>
+          <span className="text-5xl font-bold">$2.99</span>
           <span className="text-gray-600">/month</span>
         </div>
         <div className="text-gray-500 font-medium mb-2">
-          Billed annually ($84)
+          Billed annually ($35.90)
         </div>
       </div>
 

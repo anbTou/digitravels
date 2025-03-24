@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
@@ -25,7 +26,8 @@ export const SubscriptionFooter = () => {
           className="text-center max-w-2xl mx-auto"
         >
           <h2 className="text-3xl font-bold mb-4">Start Saving Today</h2>
-          <p className="text-xl mb-8">Join thousands of satisfied travelers</p>
+          <p className="text-xl mb-2">Only $2.99/month, billed annually</p>
+          <p className="text-lg mb-8">Join thousands of satisfied travelers</p>
           
           <Button 
             onClick={handleActivate}
