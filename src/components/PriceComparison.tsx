@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { MapPin, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -25,7 +26,7 @@ const comparisons = [
     bookingUrl: "https://booking.digitravels.io/url/fake-sls-cancun",
   },
   {
-    image: "/lovable-uploads/48ce484b-ff59-42b7-afd9-ebe7a0f2734b.png", // Hive Cancun (unchanged)
+    image: "/lovable-uploads/93578025-3a3f-4fe2-a7ee-5f6cc0e0da94.png", // Updated Hive Cancun image
     discount: 78,
     hotel: "Hive Cancun",
     distance: "4.69 miles from City Center",
