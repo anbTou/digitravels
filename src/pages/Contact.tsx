@@ -249,7 +249,7 @@ const Contact = () => {
                 this contact form or by emailing us directly.
               </AccordionContent>
             </AccordionItem>
-          </AccordionItems>
+          </Accordion>
         </div>
       </motion.div>
     </div>
