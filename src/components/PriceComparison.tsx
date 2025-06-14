@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { MapPin, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -33,7 +32,7 @@ const comparisons = [
     rating: 3,
     retailPrice: 440.95,
     memberPrice: 96.85,
-    bookingUrl: "https://booking.digitravels.io/url/fake-hive-cancun",
+    bookingUrl: "https://booking.digitravels.io/url/a5a16b57-98f0-4091-8a02-ae94666dd58f?isPermanentLink=true",
   },
 ];
 
