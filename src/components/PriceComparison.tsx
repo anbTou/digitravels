@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const comparisons = [
   {
-    image: "/lovable-uploads/97c475f1-c65b-4871-9158-203368afe00f.png", // Updated image
+    image: "/lovable-uploads/97c475f1-c65b-4871-9158-203368afe00f.png",
     discount: 51,
     hotel: "Casa Caribe Cancun",
     distance: "3.22 miles from City Center",
@@ -37,9 +37,12 @@ const comparisons = [
 ];
 
 function formatEuro(val: number) {
-  return "€" + val.toLocaleString("en-US", {
-    minimumFractionDigits: 2
-  });
+  return (
+    "€" +
+    val.toLocaleString("en-US", {
+      minimumFractionDigits: 2,
+    })
+  );
 }
 
 export const PriceComparison = () => {
@@ -68,10 +71,14 @@ export const PriceComparison = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-2xl border shadow-sm p-0 flex flex-col"
+              className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5 flex flex-col"
+              style={{
+                boxShadow:
+                  "0px 2px 8px 0px rgba(16, 24, 40, 0.03), 0px 1.5px 3px 0px rgba(16, 24, 40, 0.03)",
+              }}
             >
               {/* Image, Discount, Stars */}
-              <div className="relative aspect-[3/2] rounded-t-2xl overflow-hidden">
+              <div className="relative aspect-[3/2] rounded-xl overflow-hidden mb-4">
                 <img
                   src={item.image}
                   alt={item.hotel}
@@ -85,8 +92,8 @@ export const PriceComparison = () => {
                   </span>
                 </div>
                 {/* Ratings Bar */}
-                <div className="absolute left-0 right-0 bottom-3 flex justify-center">
-                  <div className="bg-black/70 rounded px-3 py-1 flex items-center gap-1">
+                <div className="absolute left-4 bottom-4">
+                  <div className="bg-black/50 rounded px-3 py-1 flex items-center gap-1">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star
                         key={i}
@@ -99,28 +106,45 @@ export const PriceComparison = () => {
               </div>
 
               {/* Details Block */}
-              <div className="px-6 pt-5 pb-6 flex-1 flex flex-col">
-                <h3 className="font-semibold text-lg mb-1 text-ellipsis whitespace-nowrap overflow-hidden">{item.hotel}</h3>
+              <div className="px-0 flex-1 flex flex-col">
+                <h3 className="font-semibold text-lg mb-1 text-ellipsis whitespace-nowrap overflow-hidden">
+                  {item.hotel}
+                </h3>
                 <div className="flex items-center text-gray-600 text-sm mb-4">
                   <MapPin className="w-4 h-4 mr-1" />
                   <span>{item.distance}</span>
                 </div>
-
                 {/* Price comparison row style */}
                 <div className="flex gap-4 mb-6">
-                  <div className="flex-1 bg-gray-50 p-4 rounded-lg flex flex-col items-start border">
-                    <div className="text-xs text-gray-500 mb-1 font-medium">Retail Price</div>
-                    <div className="text-base font-semibold text-red-600 line-through">{formatEuro(item.retailPrice)}</div>
+                  <div className="flex-1 bg-white border border-gray-300 p-3 rounded-xl flex flex-col items-start">
+                    <div className="text-xs text-gray-500 mb-1 font-medium">
+                      Retail Price
+                    </div>
+                    <div className="text-base font-semibold text-red-600 line-through">
+                      {formatEuro(item.retailPrice)}
+                    </div>
                   </div>
-                  <div className="flex-1 bg-gray-50 p-4 rounded-lg flex flex-col items-start border">
-                    <div className="text-xs text-gray-500 mb-1 font-medium">Price to Traveller</div>
-                    <div className="text-base font-semibold text-[#005488]">{formatEuro(item.memberPrice)}</div>
+                  <div className="flex-1 bg-white border border-gray-300 p-3 rounded-xl flex flex-col items-start">
+                    <div className="text-xs text-gray-500 mb-1 font-medium">
+                      Price to Traveller
+                    </div>
+                    <div className="text-base font-semibold text-[#005488]">
+                      {formatEuro(item.memberPrice)}
+                    </div>
                   </div>
                 </div>
 
                 <div className="mt-auto">
-                  <a href={item.bookingUrl} target="_blank" rel="noopener noreferrer">
-                    <Button variant="default" size="lg" className="w-full bg-[#005488] text-white border-none hover:bg-[#004070] transition-all">
+                  <a
+                    href={item.bookingUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      variant="default"
+                      size="lg"
+                      className="w-full bg-[#005488] text-white border-none hover:bg-[#004070] transition-all rounded-xl text-lg font-semibold py-3"
+                    >
                       View Deal
                     </Button>
                   </a>
