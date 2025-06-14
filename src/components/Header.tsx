@@ -16,7 +16,7 @@ export const Header = () => {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <Link to="/">
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()} active={location.pathname === "/"}>\Home</NavigationMenuLink>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()} active={location.pathname === "/"}>Home</NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               
