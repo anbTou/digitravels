@@ -10,7 +10,7 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-black/50" />
       </div>
       
-      <div className="container relative z-10 text-center py-0">
+      <div className="container relative z-10 text-center">
         <motion.div initial={{
         opacity: 0,
         y: 20
@@ -19,8 +19,8 @@ export const Hero = () => {
         y: 0
       }} transition={{
         duration: 0.6
-      }} className="space-y-6 py-0 my-0">
-          <div className="flex items-center justify-center gap-6 mb-6 my-[39px] py-[15px]">
+      }} className="space-y-6">
+          <div className="flex items-center justify-center gap-6 mb-6">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2">
               <Users className="w-4 h-4 text-white" />
               <span className="text-white text-sm">50,000+ Members</span>
