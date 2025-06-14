@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Star, Users, Percent } from "lucide-react";
+import { Star, Percent } from "lucide-react";
+
 export const Hero = () => {
   const navigate = useNavigate();
   return <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -21,10 +22,6 @@ export const Hero = () => {
         duration: 0.6
       }} className="space-y-6">
           <div className="flex items-center justify-center gap-6 mb-6">
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2">
-              <Users className="w-4 h-4 text-white" />
-              <span className="text-white text-sm">50,000+ Members</span>
-            </div>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2">
               <Percent className="w-4 h-4 text-yellow-400" />
               <span className="text-white text-sm">Save up to 40%</span>
