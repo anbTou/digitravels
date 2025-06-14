@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const comparisons = [
   {
-    image: "/lovable-uploads/816bcbbb-2dd0-4f9d-bda1-57d8ed69db6e.png",
+    image: "/lovable-uploads/06150e49-f5a1-4e08-8747-6dfe2d2abd9f.png", // Updated image
     discount: 51,
     hotel: "Casa Caribe Cancun",
     distance: "3.22 miles from City Center",
@@ -25,7 +25,7 @@ const comparisons = [
     bookingUrl: "https://booking.digitravels.io/url/fake-sls-cancun",
   },
   {
-    image: "/lovable-uploads/0e13256e-f9a1-4028-bb4b-4d4556da468e.png",
+    image: "/lovable-uploads/0e13256e-f9a1-4028-bb4a-4d4556da468e.png",
     discount: 78,
     hotel: "Hive Cancun",
     distance: "4.69 miles from City Center",
