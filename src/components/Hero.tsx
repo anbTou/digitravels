@@ -1,8 +1,6 @@
-
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-
 export const Hero = () => {
   const navigate = useNavigate();
   return <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -37,9 +35,7 @@ export const Hero = () => {
                 <div className="text-white/70 text-sm line-through">Public: $450/night</div>
                 <div className="text-white text-xl font-bold">Member: $270/night</div>
               </div>
-              <div className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
-                Save 40%
-              </div>
+              <div className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">Save up to 40%</div>
             </div>
           </div>
 
