@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const comparisons = [
   {
-    image: "/lovable-uploads/06150e49-f5a1-4e08-8747-6dfe2d2abd9f.png", // Updated image
+    image: "/lovable-uploads/97c475f1-c65b-4871-9158-203368afe00f.png", // Updated image
     discount: 51,
     hotel: "Casa Caribe Cancun",
     distance: "3.22 miles from City Center",
