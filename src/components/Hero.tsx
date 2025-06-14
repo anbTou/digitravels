@@ -1,14 +1,11 @@
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { Star, Users, Percent } from "lucide-react";
 
 export const Hero = () => {
   const navigate = useNavigate();
-
-  const scrollToSubscribe = () => {
-    const subscribeSection = document.querySelector('#subscribe-section');
-    subscribeSection?.scrollIntoView({ behavior: 'smooth' });
-  };
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -19,7 +16,7 @@ export const Hero = () => {
           className="w-full h-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/50" />
       </div>
       
       <div className="container relative z-10 text-center">
@@ -29,16 +26,51 @@ export const Hero = () => {
           transition={{ duration: 0.6 }}
           className="space-y-6"
         >
-          <span className="inline-block px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-white text-sm font-medium">
-            Discover Your Next Adventure
-          </span>
+          <div className="flex items-center justify-center gap-6 mb-6">
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2">
+              <Users className="w-4 h-4 text-white" />
+              <span className="text-white text-sm">50,000+ Members</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2">
+              <Percent className="w-4 h-4 text-yellow-400" />
+              <span className="text-white text-sm">Save up to 40%</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2">
+              <Star className="w-4 h-4 text-yellow-400" />
+              <span className="text-white text-sm">No Booking Fees</span>
+            </div>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold text-white">
-            Travel Beyond <br /> Expectations
+            Members Get <br />
+            <span className="text-yellow-400">Better Prices</span>
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Experience luxury travel with better prices and exclusive subscription benefits.
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            Skip the markup. Get exclusive member rates that aren't available to the public. 
+            No booking fees, just better prices on hotels worldwide.
           </p>
+          
+          <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 max-w-md mx-auto mb-8">
+            <div className="text-white/90 text-sm mb-2">Example savings on your next trip:</div>
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="text-white/70 text-sm line-through">Public: $450/night</div>
+                <div className="text-white text-xl font-bold">Member: $270/night</div>
+              </div>
+              <div className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                Save 40%
+              </div>
+            </div>
+          </div>
+
           <div className="flex justify-center gap-4">
+            <Button
+              size="lg"
+              className="bg-yellow-400 text-black hover:bg-yellow-300 transition-all duration-300 text-lg px-8 py-4"
+              onClick={() => navigate('/subscription')}
+            >
+              See Member Prices - Free Trial
+            </Button>
             <a 
               href="http://booking.digitravels.io/"
               target="_blank"
@@ -46,19 +78,17 @@ export const Hero = () => {
             >
               <Button
                 size="lg"
-                className="bg-white text-travel-900 hover:bg-white/90 transition-all duration-300"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-black transition-all duration-300 text-lg px-8 py-4"
               >
-                Start Exploring
+                Browse Public Rates
               </Button>
             </a>
-            <Button
-              size="lg"
-              className="bg-[#005488] hover:bg-[#005488]/90 text-white border-none"
-              onClick={() => navigate('/subscription')}
-            >
-              Subscribe
-            </Button>
           </div>
+          
+          <p className="text-white/80 text-sm">
+            ✓ Free 14-day trial • ✓ Cancel anytime • ✓ Instant access to member prices
+          </p>
         </motion.div>
       </div>
     </section>
