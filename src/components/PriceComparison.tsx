@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import { MapPin, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// Replace the image URLs with the correct new images as per your latest uploads.
 const comparisons = [
   {
-    image: "/lovable-uploads/97c475f1-c65b-4871-9158-203368afe00f.png",
+    image: "/lovable-uploads/953ccb41-9f8e-4e58-887d-174fa851a715.png", // For Casa Caribe Cancun
     discount: 51,
     hotel: "Casa Caribe Cancun",
     distance: "3.22 miles from City Center",
@@ -15,7 +16,7 @@ const comparisons = [
     bookingUrl: "https://booking.digitravels.io/url/5292643b-0957-4878-9842-98fc9d635488",
   },
   {
-    image: "/lovable-uploads/38be9397-da0f-40df-b44a-a97586616e25.png",
+    image: "/lovable-uploads/9b0e5b04-2497-4019-9d3f-c3e4928ee004.png", // For SLS Cancun
     discount: 38,
     hotel: "SLS Cancun",
     distance: "3.04 miles from City Center",
@@ -25,7 +26,7 @@ const comparisons = [
     bookingUrl: "https://booking.digitravels.io/url/fake-sls-cancun",
   },
   {
-    image: "/lovable-uploads/0e13256e-f9a1-4028-bb4a-4d4556da468e.png",
+    image: "/lovable-uploads/48ce484b-ff59-42b7-afd9-ebe7a0f2734b.png", // For Hive Cancun
     discount: 78,
     hotel: "Hive Cancun",
     distance: "4.69 miles from City Center",
