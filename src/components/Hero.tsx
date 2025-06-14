@@ -1,7 +1,7 @@
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { Star } from "lucide-react";
 
 export const Hero = () => {
   const navigate = useNavigate();
@@ -21,13 +21,6 @@ export const Hero = () => {
       }} transition={{
         duration: 0.6
       }} className="space-y-6">
-          <div className="flex items-center justify-center gap-6 mb-6">
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2">
-              <Star className="w-4 h-4 text-yellow-400" />
-              <span className="text-white text-sm">No Booking Fees</span>
-            </div>
-          </div>
-
           <h1 className="text-5xl md:text-7xl font-bold text-white">
             Members Get <br />
             <span className="text-yellow-400">Better Prices</span>
