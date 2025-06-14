@@ -16,7 +16,7 @@ const comparisons = [
     bookingUrl: "https://booking.digitravels.io/url/5292643b-0957-4878-9842-98fc9d635488",
   },
   {
-    image: "/lovable-uploads/9b0e5b04-2497-4019-9d3f-c3e4928ee004.png", // For SLS Cancun (unchanged)
+    image: "/lovable-uploads/6a2d2df6-6b9c-484e-8d90-8bdde2268ac6.png", // Updated image for SLS Cancun
     discount: 38,
     hotel: "SLS Cancun",
     distance: "3.04 miles from City Center",
