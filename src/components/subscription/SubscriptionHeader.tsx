@@ -1,16 +1,17 @@
-
 import { motion } from "framer-motion";
 import { Star, TrendingDown, Shield } from "lucide-react";
-
 export const SubscriptionHeader = () => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-      className="max-w-4xl mx-auto text-center"
-    >
+  return <motion.div initial={{
+    opacity: 0,
+    y: 20
+  }} whileInView={{
+    opacity: 1,
+    y: 0
+  }} viewport={{
+    once: true
+  }} transition={{
+    duration: 0.5
+  }} className="max-w-4xl mx-auto text-center">
       <div className="inline-flex items-center gap-2 bg-yellow-100 text-yellow-800 px-4 py-1.5 rounded-full mb-4">
         <Star className="w-4 h-4" />
         <span className="text-sm font-medium">Beats Booking.com Every Time</span>
@@ -42,9 +43,9 @@ export const SubscriptionHeader = () => {
         <div className="bg-green-50 border border-green-200 rounded-lg p-4">
           <div className="text-green-600 font-semibold mb-2">DigiTravels Member</div>
           <div className="text-green-800">
-            <div className="text-2xl font-bold mb-1">$270</div>
+            <div className="text-2xl font-bold mb-1">$350</div>
             <div className="text-sm">No booking fees</div>
-            <div className="text-xs text-green-600">Save $205!</div>
+            <div className="text-xs text-green-600">Save $100!</div>
           </div>
         </div>
       </div>
@@ -59,6 +60,5 @@ export const SubscriptionHeader = () => {
           <span>14-Day Free Trial</span>
         </div>
       </div>
-    </motion.div>
-  );
+    </motion.div>;
 };
