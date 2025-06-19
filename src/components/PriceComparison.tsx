@@ -12,7 +12,7 @@ const comparisons = [
     rating: 5,
     retailPrice: 144.75,
     memberPrice: 69.50,
-    bookingUrl: "https://booking.digitravels.io/url/5292643b-0957-4878-9842-98fc9d635488",
+    bookingUrl: "https://booking.digitravels.io/url/ae6c21e2-4407-4280-8d22-c89c23ca8248?isPermanentLink=true",
   },
   {
     image: "/lovable-uploads/3905327e-2ea3-4e9c-9b03-39045d8aa6eb.png", // Updated SLS Cancun image
